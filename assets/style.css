@@ -625,3 +625,13 @@ a.work-card:hover .wc-name{color:var(--blue)}
   .reveal{opacity:1;transform:none}
   .dare .dare-fx{display:none!important}
 }
+
+/* ---------- Lead form (added 2026-08-25 audit) ---------- */
+.lead-form{max-width:560px;margin:0 auto;background:#fff;border:1px solid var(--line);border-radius:18px;padding:30px;box-shadow:var(--shadow)}
+.lead-form label{display:block;font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--blue);margin:16px 0 6px}
+.lead-form label:first-child{margin-top:0}
+.lead-form input,.lead-form textarea{width:100%;font:inherit;font-size:16px;padding:13px 14px;border:1.5px solid var(--line);border-radius:10px;background:#fbfdff;color:inherit}
+.lead-form input:focus,.lead-form textarea:focus{outline:none;border-color:var(--blue)}
+.lead-form textarea{min-height:88px;resize:vertical}
+.lead-form button{width:100%;margin-top:20px;border:0;cursor:pointer}
+.lead-form .fineprint{margin-top:12px;text-align:center}

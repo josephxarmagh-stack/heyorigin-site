@@ -4,11 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Start — talk to a person, or the robot | ORIGIN</title>
-<meta name="description" content="Email Nicholas directly, test the AI receptionist on the demo line, or send your business name for a free website mockup. No forms, no sales funnel.">
+<meta name="description" content="Email Nicholas directly, test the AI receptionist on the demo line, or send your business name in a 30-second form for a free website mockup. No sales funnel.">
 <meta property="og:title" content="Start — talk to a person, or the robot | ORIGIN">
-<meta property="og:description" content="Email Nicholas directly, test the AI receptionist on the demo line, or send your business name for a free website mockup. No forms, no sales funnel.">
+<meta property="og:description" content="Email Nicholas directly, test the AI receptionist on the demo line, or send your business name in a 30-second form for a free website mockup. No sales funnel.">
 <meta property="og:type" content="website">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="https://heyorigin.ai/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://heyorigin.ai/start/">
 <meta property="og:url" content="https://heyorigin.ai/start/">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23122a42'/%3E%3Ccircle cx='32' cy='32' r='14' fill='none' stroke='white' stroke-width='7'/%3E%3C/svg%3E">
@@ -46,7 +47,7 @@
   <!-- HERO -->
   <div class="hero">
     <div class="container">
-      <span class="towns">No forms &middot; No funnel &middot; No &ldquo;discovery call&rdquo;</span>
+      <span class="towns">No logins &middot; No funnel &middot; No &ldquo;discovery call&rdquo;</span>
       <h1>Talk to a person. Or the robot. <span class="grad">Your call.</span></h1>
       <p class="lead">Three ways in. All of them free, none of them commit you to anything.</p>
     </div>
@@ -76,12 +77,37 @@
         <div class="sku">
           <span class="sku-name">Free thing first</span>
           <h3>Get your free mockup</h3>
-          <p class="outcome">Email your business name and phone number. Within days you get a link to a finished draft of your new website. Love it or delete it &mdash; $0 either way.</p>
-          <div class="price"><span class="num" style="font-size:22px;word-break:break-all">a@nicholaspiva.com</span></div>
-          <a class="btn btn-primary" href="mailto:a@nicholaspiva.com?subject=Build%20my%20free%20mockup&amp;body=Business%20name%3A%0ABest%20phone%20number%3A%0AAnything%20you%20want%20us%20to%20know%3A">Email us now</a>
+          <p class="outcome">Thirty seconds, two fields. Within days you get a link to a finished draft of your new website. Love it or delete it &mdash; $0 either way.</p>
+          <div class="price"><span class="num" style="font-size:26px">30 seconds</span></div>
+          <a class="btn btn-primary" href="#form">Fill the short form &darr;</a>
         </div>
 
       </div>
+    </div>
+  </section>
+
+  <!-- THE FORM -->
+  <section id="form" style="background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+    <div class="container">
+      <div class="section-head center">
+        <span class="kicker">The 30-second start</span>
+        <h2>Two fields. We take it from there.</h2>
+        <p class="lead mt-sm">No account, no funnel, no spam &mdash; your info goes straight to Nicholas&rsquo;s inbox and nowhere else.</p>
+      </div>
+      <form class="lead-form" action="https://formsubmit.co/a@nicholaspiva.com" method="POST">
+        <input type="hidden" name="_subject" value="ORIGIN lead — from heyorigin.ai">
+        <input type="hidden" name="_next" value="https://heyorigin.ai/start/sent/">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+        <label for="lf-biz">Business name</label>
+        <input id="lf-biz" name="business" type="text" required autocomplete="organization" placeholder="e.g. Clipper Barber Shop">
+        <label for="lf-phone">Best phone number</label>
+        <input id="lf-phone" name="phone" type="tel" required autocomplete="tel" placeholder="(508) 555-0100">
+        <label for="lf-notes">Anything you want us to know <span style="text-transform:none;color:var(--ink-soft);font-weight:400">(optional)</span></label>
+        <textarea id="lf-notes" name="notes" placeholder="Missed calls? Old website? Invisible on Google?"></textarea>
+        <button class="btn btn-primary btn-lg" type="submit">Send it &mdash; get my free mockup</button>
+        <p class="fineprint">Prefer email? <a href="mailto:a@nicholaspiva.com?subject=Build%20my%20free%20mockup">a@nicholaspiva.com</a> works too.</p>
+      </form>
     </div>
   </section>
 
@@ -164,7 +190,7 @@
 
 <div class="mobile-bar">
   <a class="btn btn-call" href="tel:617-631-8645">&#128222; Call the AI</a>
-  <a class="btn btn-primary" href="mailto:a@nicholaspiva.com?subject=Build%20my%20free%20mockup&amp;body=Business%20name%3A%0ABest%20phone%20number%3A%0AAnything%20you%20want%20us%20to%20know%3A">Get my free mockup</a>
+  <a class="btn btn-primary" href="/start/#form">Get my free mockup</a>
 </div>
 
 <script src="/assets/site.js"></script>
