@@ -344,8 +344,8 @@
   },
   {
    "id": "round2",
-   "title": "Round 2: seven follow-ups from your answers",
-   "lead": "Thank you. Your answers set most of the launch. These seven are what's left; short answers are fine.",
+   "title": "Round 2: follow-ups from your answers",
+   "lead": "Thank you. Your answers set most of the launch. These are what's left; short answers are fine.",
    "chips": [
     "Not sure",
     "Ask Dad",
@@ -389,7 +389,7 @@
     {
      "id": "r2",
      "t": "You chose the old website's quantity prices for the 23 items. Four of those old quantity prices are HIGHER than the single price. Keep them anyway?",
-     "w": "UT591 ($7.25, old 2+ at $7.75) · UW2616 ($55.00, old 1+ at $55.50) · UX4454 ($2.49, old 6+ at $2.50) · UX9260 ($27.50, old 2+ at $32.50).",
+     "w": "UT591 ($7.25, old 2+ at $7.75) · UW2616 ($55.00, old 1+ at $55.50) · UX4454 ($2.49, old 6+ at $2.50) · UX9260 ($27.50, old 2+ at $32.50 and 4+ at $29.50).",
      "type": "choice",
      "opts": [
       "Drop those four higher prices, keep the rest as the old website had them (Nicholas recommends)",
@@ -449,6 +449,25 @@
      "t": "Which list is the truth for \"approved wholesale customer\"? The new website imported 5,379 accounts and 3,786 of them were only prospects on the old site.",
      "type": "text",
      "ph": "The office system list, the old website's approved list, an Excel you keep, or \"ask me\""
+    },
+    {
+     "id": "r10",
+     "t": "The net-30 customers (about 30): can you email Nicholas the Excel from the office system, for both stores?",
+     "type": "choice",
+     "opts": [
+      "Yes, sending it",
+      "It's in the office system, Nicholas can pull it",
+      "Ask me"
+     ]
+    },
+    {
+     "id": "r11",
+     "t": "Launch morning, one name each: who turns the old website off, and who owns the list of orders that still land on the old website that first week?",
+     "type": "multi",
+     "rows": [
+      "Turns the old website off (one name)",
+      "Owns the stray-order list (one name)"
+     ]
     }
    ]
   }
