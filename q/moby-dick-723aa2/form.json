@@ -2,161 +2,249 @@
  "slug": "moby-dick",
  "title": "Moby Dick: launch questions",
  "who": "Mom",
- "lede": "For the new Moby Dick Specialties website. Most of these can be answered \"Same as Upper Deck\". Answer in your own words, in any order, over as many sittings as you like. Each part sends itself to Nicholas a few seconds after you stop typing (watch for the green Sent line) and keeps a copy on your phone.",
+ "lede": "Veronica answered the first ten Moby Dick questions on September 9. Thank you. Two things are left. Each part sends itself to Nicholas a few seconds after you stop typing and keeps a copy on your phone.",
  "sections": [
   {
    "id": "all",
-   "title": "Moby Dick Specialties",
-   "lead": "10 questions. Under each one is what Nicholas found on the old website and in the catalog.",
+   "title": "Moby Dick Specialties: what's left",
+   "lead": "Two questions.",
+   "chips": [
+    "Same as Upper Deck",
+    "Not sure",
+    "Ask Dad"
+   ],
    "qs": [
     {
-     "id": "m1",
-     "t": "The Moby Dick minimum is $250. Do you count it at the regular price, or after the quantity discount?",
-     "w": "Every page of the old Moby Dick website says $250 (the $75 was only in the printed 2022–23 book). Example: 18 of one item can be $270 at the regular price but $240 after its quantity discount.",
-     "type": "choice",
-     "opts": [
-      "Same as my Upper Deck answer",
-      "The regular price, before any quantity discount",
-      "After the quantity discount"
-     ],
-     "note": "Anything to add (optional)"
-    },
-    {
-     "id": "m13",
-     "t": "The $75 showroom minimum for Moby Dick: keep it?",
-     "w": "A separate $75 minimum for customers who buy in the showroom, on top of the $250 for web orders.",
-     "type": "choice",
-     "opts": [
-      "Same as my Upper Deck answer",
-      "Yes, keep the $75 showroom minimum",
-      "No, drop it"
-     ],
-     "note": "Anything to add (optional)"
-    },
-    {
-     "id": "m2",
-     "t": "Four MR items: the single price went up, but the 12+ price did not. What should the 12+ price be?",
-     "w": "These four went up in price, and the website's 12+ price is still the old, lower one. They are newer than the printed book, so only you have the right number.",
+     "id": "m3",
+     "t": "The 41 MR resin figures: for each one, ONE price only, or type the quantity prices",
+     "w": "Their quantity prices were taken off in August because the printed book doesn't have them. Price now = what the old website charges today. Type ONE for one price only, or the quantity prices (example: 12+ 3.25).",
      "type": "table",
      "cols": [
       "Item",
       "Price now",
-      "12+ price the website shows",
-      "Correct 12+ price"
+      "Old quantity prices (if we have them)",
+      "Your answer: ONE, or the prices"
      ],
      "rows": [
       [
-       "MR-419",
+       "MR-199",
+       "$8.00",
+       "none on file"
+      ],
+      [
+       "MR-200",
+       "$5.00",
+       "none on file"
+      ],
+      [
+       "MR-209",
+       "$11.50",
+       "none on file"
+      ],
+      [
+       "MR-210",
+       "$11.50",
+       "none on file"
+      ],
+      [
+       "MR-211",
+       "$5.00",
+       "none on file"
+      ],
+      [
+       "MR-212",
+       "$5.00",
+       "none on file"
+      ],
+      [
+       "MR-215",
+       "$10.50",
+       "none on file"
+      ],
+      [
+       "MR-216",
+       "$10.50",
+       "none on file"
+      ],
+      [
+       "MR-218",
+       "$14.75",
+       "none on file"
+      ],
+      [
+       "MR-219",
+       "$13.00",
+       "none on file"
+      ],
+      [
+       "MR-220",
+       "$8.00",
+       "none on file"
+      ],
+      [
+       "MR-221",
+       "$5.00",
+       "none on file"
+      ],
+      [
+       "MR-222",
+       "$4.60",
+       "none on file"
+      ],
+      [
+       "MR-227",
+       "$11.00",
+       "none on file"
+      ],
+      [
+       "MR-228",
+       "$10.50",
+       "none on file"
+      ],
+      [
+       "MR-232",
+       "$10.75",
+       "none on file"
+      ],
+      [
+       "MR-235",
+       "$9.50",
+       "none on file"
+      ],
+      [
+       "MR-240",
+       "$3.10",
+       "none on file"
+      ],
+      [
+       "MR-400",
+       "$3.25",
+       "none on file"
+      ],
+      [
+       "MR-401",
+       "$3.25",
+       "none on file"
+      ],
+      [
+       "MR-402",
+       "$3.25",
+       "none on file"
+      ],
+      [
+       "MR-403",
+       "$3.25",
+       "none on file"
+      ],
+      [
+       "MR-404",
        "$3.50",
-       "$3.25"
+       "none on file"
       ],
       [
-       "MR-413",
+       "MR-405",
+       "$3.50",
+       "none on file"
+      ],
+      [
+       "MR-406",
+       "$3.50",
+       "none on file"
+      ],
+      [
+       "MR-408",
        "$3.25",
-       "$3.00"
+       "none on file"
       ],
       [
-       "MR-412",
+       "MR-409",
        "$3.25",
-       "$3.00"
+       "none on file"
       ],
       [
-       "MR-426",
+       "MR-410",
        "$3.75",
-       "$3.50"
+       "none on file"
+      ],
+      [
+       "MR-411",
+       "$3.25",
+       "none on file"
+      ],
+      [
+       "MR-414",
+       "$3.75",
+       "none on file"
+      ],
+      [
+       "MR-415",
+       "$3.75",
+       "none on file"
+      ],
+      [
+       "MR-416",
+       "$3.50",
+       "none on file"
+      ],
+      [
+       "MR-417",
+       "$3.25",
+       "none on file"
+      ],
+      [
+       "MR-418",
+       "$3.25",
+       "none on file"
+      ],
+      [
+       "MR-422",
+       "$4.00",
+       "none on file"
+      ],
+      [
+       "MR-423",
+       "$4.00",
+       "none on file"
+      ],
+      [
+       "MR-424",
+       "$4.00",
+       "none on file"
+      ],
+      [
+       "MR-425",
+       "$3.75",
+       "none on file"
+      ],
+      [
+       "MR-427",
+       "$3.25",
+       "none on file"
+      ],
+      [
+       "MR-428",
+       "$4.00",
+       "none on file"
+      ],
+      [
+       "MR-429",
+       "$4.00",
+       "none on file"
       ]
      ]
     },
     {
-     "id": "m2b",
-     "t": "MA-1051: price $3.65, the website shows 4+ at $3.64 (one cent less) and 8+ at $3.35. Is the 4+ price real, or delete it?",
-     "w": "It came over from the old website that way. A one-cent discount looks like a typo. There is also an 8+ price, which looks fine.",
+     "id": "m16",
+     "t": "Who is approved to buy from Moby Dick? Where is that list?",
+     "w": "On the new Moby Dick website every old account came over as approved, because the file we had for Moby Dick did not say who was approved and who had only registered. Upper Deck's file did. To fix Moby Dick we need the real list.",
      "type": "choice",
      "opts": [
-      "Delete the 4+ price, keep the single and 8+ prices (Nicholas recommends)",
-      "It's real, keep it",
-      "Write the right prices below"
+      "The office system (Acctivate) has it: Nicholas or the tech guy pulls the active Moby Dick customers",
+      "The old Moby Dick website's user list (Nicholas logs into its admin)",
+      "It's the same customers as Upper Deck: use Upper Deck's approved list",
+      "Ask me"
      ],
-     "note": "The right prices, if you want to write them"
-    },
-    {
-     "id": "m3",
-     "t": "The 41 MR resin figures: one price only, or quantity discounts?",
-     "w": "Right now the new website shows ONE price for each of the 41 MR resin figures, with no quantity discount. The old website had quantity prices for them; they were taken off the new website in August while the prices were being checked. None of the 41 are in the printed book.",
-     "type": "choice",
-     "opts": [
-      "Use the same quantity prices the old website had",
-      "One price only, no quantity discount",
-      "Send me the list and I'll mark each one"
-     ],
-     "note": "Anything to add (optional)"
-    },
-    {
-     "id": "m4",
-     "t": "Paying for a Moby Dick web order: same as your Upper Deck answer?",
-     "w": "The old Moby Dick website uses the same paying words as Upper Deck (check, Visa, MasterCard, plus postage). On the Upper Deck page you answered when the card is charged, first orders, checks, and terms.",
-     "type": "choice",
-     "opts": [
-      "Same as Upper Deck",
-      "Different (write it below)"
-     ],
-     "note": "If different, write it here"
-    },
-    {
-     "id": "m15",
-     "t": "Items with a minimum (Min. 4 and so on): same rule as your Upper Deck answer?",
-     "w": "On the Upper Deck page you chose whether each item keeps its old-website rule, or one rule for all. Moby Dick items have minimums too.",
-     "type": "choice",
-     "opts": [
-      "Same as Upper Deck",
-      "Different (write it below)"
-     ],
-     "note": "If different, write it here"
-    },
-    {
-     "id": "m10",
-     "t": "Who handles the Moby Dick web orders?",
-     "w": "The old Moby Dick website prints its own orders@ inbox on every page.",
-     "type": "multi",
-     "rows": [
-      "Same people as your Upper Deck answer? (SAME, or initials)",
-      "Should the new website send orders to the same orders@ inbox as the old Moby Dick website, or another?",
-      "Who types Moby Dick web orders into the office system, and who is the backup?",
-      "Launch morning: who turns ordering off on the old Moby Dick website? (SAME as Upper Deck, or initials)",
-      "Who keeps the list of any orders that still come in on the old Moby Dick website that first week? (SAME, or initials)"
-     ]
-    },
-    {
-     "id": "m14",
-     "t": "Three items the old website stopped selling but the new website still sells. Are they in the warehouse?",
-     "w": "MB-1162, MR-153 and MS-513. If they are really on the shelf to ship, the new website keeps selling them. If not, they should show sold out.",
-     "type": "table",
-     "cols": [
-      "Item",
-      "IN STOCK or SOLD OUT"
-     ],
-     "rows": [
-      [
-       "MB-1162"
-      ],
-      [
-       "MR-153"
-      ],
-      [
-       "MS-513"
-      ]
-     ]
-    },
-    {
-     "id": "m12",
-     "t": "Hiding prices from people who aren't customers: same as your Upper Deck answer?",
-     "w": "On the Upper Deck page you chose between \"good enough, same as today, open on time\" and \"hide every price, even if the launch moves back\".",
-     "type": "choice",
-     "opts": [
-      "Same as Upper Deck",
-      "Different (write it below)"
-     ],
-     "note": "If different, write it here"
+     "note": "Anything to add"
     }
    ]
   }
