@@ -397,16 +397,16 @@
    "qs": [
     {
      "id": "ch1",
-     "t": "What is the plan for the church?",
-     "w": "Where it stands from your answers: the family owns it through 343 County St LLC, about $300K is owed on it, it is worth about $500K, and it earns nothing. So it costs money every month and brings none in. Nicholas's lean: if nobody has a real use for it, sell it and clear the $300K. But it is your and Dad's call.",
+     "t": "What is your and Dad's plan for the church?",
+     "w": "From your answers: the family owns it through 343 County St LLC, about $300K is owed on it, it is worth about $500K, and it earns nothing today.",
      "type": "choice",
      "opts": [
-      "Sell it and clear the debt (Nicholas recommends)",
+      "Sell it",
       "Keep it: there is a plan for it (write it below)",
       "Rent it out",
-      "Not sure, let's talk"
+      "Not decided yet"
      ],
-     "note": "The plan, if there is one, and by when"
+     "note": "The plan in your words, and by when"
     },
     {
      "id": "ch2",
