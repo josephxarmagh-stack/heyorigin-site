@@ -36,6 +36,7 @@
         } else {
           h += '<div class="field"><textarea data-k="' + k + '" placeholder="' + esc(q.ph || "") + '">' + esc(val(k)) + '</textarea></div>';
         }
+        if (sec.chips && sec.chips.length) h += '<div class="chips">' + sec.chips.map(function (c) { return '<button type="button" class="chip" data-chip="' + esc(c) + '" data-q="' + q.id + '">' + esc(c) + '</button>'; }).join("") + '</div>';
         h += '</div>';
       });
       h += '<div class="saved" id="saved-' + sec.id + '"></div><div class="send"><button type="button" data-push="' + sec.id + '">Send now</button><button type="button" class="alt" data-send="' + sec.id + '">Text it instead</button><span class="hint">Sends by itself a few seconds after you stop typing, and keeps a copy on this phone. "Text it instead" opens a text message: pick Nicholas as the person to send it to.</span></div></section>';
@@ -43,7 +44,9 @@
     document.getElementById("pr-toc").innerHTML = toc; document.getElementById("pr-secs").innerHTML = h; counts();
   }
   function counts() {
-    Q.forEach(function (sec) { var live = sec.qs.filter(shown); var done = live.filter(isAnswered).length, all = live.length; var el = document.getElementById("count-" + sec.id); el.textContent = done + " of " + all + " answered"; el.className = "count" + (done === all ? " done" : ""); });
+    var tDone = 0, tAll = 0;
+    Q.forEach(function (sec) { var live = sec.qs.filter(shown); var done = live.filter(isAnswered).length, all = live.length; tDone += done; tAll += all; var el = document.getElementById("count-" + sec.id); el.textContent = done + " of " + all + " answered"; el.className = "count" + (done === all ? " done" : ""); });
+    var p = document.getElementById("pr-progress"); if (p) { p.textContent = (tDone === tAll ? "All " + tAll + " answered. Thank you!" : tDone + " of " + tAll + " answered"); p.className = tDone === tAll ? "done" : ""; var nb = document.getElementById("pr-next"); if (nb) nb.hidden = (tDone === tAll); }
     // conditional questions appear or disappear as their trigger answer changes
     Q.forEach(function (sec) { sec.qs.forEach(function (q) { if (!q.showIf) return; var el = document.querySelector('.q[data-q="' + q.id + '"]'); if (el) el.classList.toggle("hidden-q", !shown(q)); }); });
   }
@@ -120,6 +123,17 @@
   root.addEventListener("change", function (e) { var el = e.target; if (el.type !== "radio") return; save(el.name, el.value); document.querySelectorAll('input[name="' + el.name + '"]').forEach(function (r) { r.closest(".choice").classList.toggle("picked", r.checked); }); var id = sectionOf(el); if (id) schedule(id); });
   root.addEventListener("click", function (e) {
     var b = e.target.closest("button"); if (!b) return;
+    if (b.dataset.chip) {
+      // one-tap answer: fill the first empty box of that question (or every empty box of a multi/table), then send
+      var card = b.closest(".q"), boxes = [].slice.call(card.querySelectorAll("textarea[data-k], input[type=text][data-k]")), empty = boxes.filter(function (x) { return !x.value.trim(); });
+      (empty.length ? empty : boxes.slice(0, 1)).forEach(function (x) { x.value = b.dataset.chip; save(x.dataset.k, x.value); });
+      var sid = sectionOf(card); if (sid) schedule(sid); return;
+    }
+    if (b.id === "pr-next") {
+      var target = null; Q.some(function (sec) { return sec.qs.some(function (q) { if (shown(q) && !isAnswered(q)) { target = q; return true; } return false; }); });
+      if (target) { var el = document.querySelector('.q[data-q="' + target.id + '"]'); if (el) { el.scrollIntoView({ behavior: "smooth", block: "start" }); el.classList.add("flash"); setTimeout(function () { el.classList.remove("flash"); }, 1500); } }
+      return;
+    }
     if (b.dataset.push) { clearTimeout(timers[b.dataset.push]); push(b.dataset.push, true); }
     if (b.dataset.send) { var t = compile(b.dataset.send); if (!t) { alert("Nothing answered in this section yet."); return; } location.href = "sms:" + (CFG.sms || "") + "&body=" + encodeURIComponent(t); }
   });

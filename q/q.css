@@ -25,3 +25,9 @@ section.sec { margin:26px 0 0; padding-top:10px; border-top:3px solid var(--navy
 .note { margin:18px 0 0; padding:12px 14px; background:var(--paper2); border-radius:8px; font-size:16px; color:var(--ink2); }
 @media (max-width:480px) { body { font-size:17px; } }
 .q.hidden-q { display:none; }
+.topbar { position:sticky; top:0; z-index:5; display:flex; gap:10px; align-items:center; justify-content:space-between; background:var(--paper); padding:8px 0; border-bottom:1px solid var(--rule); margin:0 0 10px; }
+#pr-progress { font-weight:700; font-size:16px; } #pr-progress.done { color:var(--ok); }
+#pr-next { font:inherit; font-weight:700; font-size:15px; padding:8px 12px; border-radius:8px; border:2px solid var(--navy); background:#fff; color:var(--navy); }
+.chips { display:flex; flex-wrap:wrap; gap:8px; margin:8px 0 0; }
+.chip { font:inherit; font-size:15px; font-weight:600; padding:8px 12px; border-radius:999px; border:1px solid var(--fb); background:var(--paper2); color:var(--ink); }
+.q.flash { outline:3px solid var(--brass, #0076BE); outline-offset:4px; border-radius:6px; }

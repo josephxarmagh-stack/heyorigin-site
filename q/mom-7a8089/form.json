@@ -1,0 +1,708 @@
+{
+ "slug": "mom-7a8089",
+ "title": "Mom's questions",
+ "who": "Mom",
+ "lede": "Everything Nicholas needs from you, in one place: two short parts for the new websites and five short parts for the family picture. Answer in your own words, in any order, over as many sittings as you like. Each part sends itself to Nicholas a few seconds after you stop typing (watch for the green Sent line) and keeps a copy on your phone. If you don't know, tap Not sure or Ask Dad and move on. Never type an account number, password or Social Security number here: tap In person.",
+ "sections": [
+  {
+   "id": "udl",
+   "title": "1. Upper Deck website",
+   "lead": "14 questions. Under each one is what Nicholas found on the old website and in the catalogs.",
+   "qs": [
+    {
+     "id": "u1",
+     "t": "The $250 minimum: do you count it at the regular price, or after the quantity discount?",
+     "w": "Both old websites say \"$250 minimum\" on every page. Example: 18 of one item can be $270 at the regular price but $240 after its quantity discount. Which one counts toward the $250?",
+     "type": "choice",
+     "opts": [
+      "The regular price, before any quantity discount",
+      "After the quantity discount"
+     ],
+     "note": "Does the $250 minimum also apply to orders picked up at the showroom? Yes / no. Anything else to add."
+    },
+    {
+     "id": "u15",
+     "t": "The $75 showroom minimum: keep it on the new website?",
+     "w": "The old website has a separate $75 minimum for customers who buy in the showroom, on top of the $250 minimum for web orders.",
+     "type": "choice",
+     "opts": [
+      "Yes, keep the $75 showroom minimum",
+      "No, drop it"
+     ],
+     "note": "Anything to add (optional)"
+    },
+    {
+     "id": "u2",
+     "t": "Paying for a web order",
+     "w": "The old website says: \"check, Visa, or MasterCard for full amount, plus postage with order unless other financial arrangements have been made.\" The new website is built to charge the card once, when the order ships, for the goods plus the real freight.",
+     "type": "multi",
+     "rows": [
+      "When should the card be charged: when the order SHIPS (goods plus the real freight), or when the order is PLACED?",
+      "A brand-new customer with no card on file places a first order. What should happen?",
+      "Do you still take checks?",
+      "Are there customers who pay on terms (net 30: they get a bill and pay within 30 days) instead of a card? Which ones?"
+     ]
+    },
+    {
+     "id": "u3",
+     "t": "Five items: the quantity price is HIGHER than the single price. Which one is right?",
+     "w": "A quantity price should be lower, not higher. These five came over from the old website that way. Nicholas will text you a sheet with the two prices for each item. For each line type SINGLE if the single price is right, QUANTITY if the quantity price is right, or type the right prices. If you don't want to look them up, type LOOK LATER.",
+     "type": "table",
+     "cols": [
+      "Item",
+      "Your answer: SINGLE, QUANTITY, or the right prices"
+     ],
+     "rows": [
+      [
+       "L434"
+      ],
+      [
+       "UAL128"
+      ],
+      [
+       "UDXL201"
+      ],
+      [
+       "UT906"
+      ],
+      [
+       "X2060 (the 2026 garden catalog prints the 4+ price the same as the single price, so the single price is probably right)"
+      ]
+     ]
+    },
+    {
+     "id": "u4a",
+     "t": "23 items: one price only, or quantity discounts?",
+     "w": "Right now the new website shows ONE price for each of these 23 items, with no quantity discount. The old website had quantity discounts for them; they were taken off the new website in August while the prices were being checked. Five of the 23 are printed in the 2026 catalogs with quantity prices; the other 18 are not in any book.",
+     "type": "choice",
+     "opts": [
+      "Use the same quantity prices the old website had",
+      "One price only, no quantity discount",
+      "I'll go item by item in the next question"
+     ],
+     "note": "Anything to add (optional)"
+    },
+    {
+     "id": "u4",
+     "t": "Item by item",
+     "w": "Nicholas will text you the sheet with each item's old quantity prices and, for the five that are in a 2026 catalog, the catalog's prices. For each line type OLD for the old website's quantity prices, BOOK for the catalog's quantity prices (only the five lines that name a page), ONE for one price only, or type the prices yourself.",
+     "type": "table",
+     "cols": [
+      "Item",
+      "In a 2026 catalog?",
+      "Your answer: OLD, BOOK, ONE, or prices"
+     ],
+     "rows": [
+      [
+       "UT591",
+       "no"
+      ],
+      [
+       "UW2616",
+       "yes, master catalog p. 74"
+      ],
+      [
+       "UX4016",
+       "yes, garden catalog p. 89"
+      ],
+      [
+       "UX4136",
+       "no"
+      ],
+      [
+       "UX4237",
+       "no"
+      ],
+      [
+       "UX4428",
+       "yes, garden catalog p. 14"
+      ],
+      [
+       "UX4454",
+       "yes, master catalog p. 13"
+      ],
+      [
+       "UX9179",
+       "no"
+      ],
+      [
+       "UX9260",
+       "yes, garden catalog p. 30"
+      ],
+      [
+       "X1366",
+       "no"
+      ],
+      [
+       "X1877",
+       "no"
+      ],
+      [
+       "X2241",
+       "no"
+      ],
+      [
+       "X2297",
+       "no"
+      ],
+      [
+       "X2401",
+       "no"
+      ],
+      [
+       "X2521",
+       "no"
+      ],
+      [
+       "X2593",
+       "no"
+      ],
+      [
+       "X2627",
+       "no"
+      ],
+      [
+       "X2628",
+       "no"
+      ],
+      [
+       "X2639",
+       "no"
+      ],
+      [
+       "X2640",
+       "no"
+      ],
+      [
+       "X5042",
+       "no"
+      ],
+      [
+       "X648",
+       "no"
+      ],
+      [
+       "X683",
+       "no"
+      ]
+     ],
+     "showIf": {
+      "id": "u4a",
+      "equals": "I'll go item by item in the next question"
+     }
+    },
+    {
+     "id": "u5",
+     "t": "Items with a minimum (Min. 4 and so on): after the minimum, any number, or only in steps?",
+     "w": "On the old website this is set item by item. Example: the Cardinal is Min. 4 and then goes in twos (4, 6, 8). X2060 is Min. 4 and then any number (4, 5, 6). The new website now copies each item's old-website rule exactly (34 items were set that way on September 8).",
+     "type": "choice",
+     "opts": [
+      "Keep it: each item works the way it did on the old website (Nicholas recommends)",
+      "Every item: at least the minimum, then any number",
+      "Every item: only in multiples of the minimum (4, 8, 12)"
+     ],
+     "note": "Anything to add (optional)"
+    },
+    {
+     "id": "u9",
+     "t": "Who handles the web orders once the new website is live? (initials are fine, plus a backup)",
+     "w": "The old website sends orders to its orders@ inbox and claims to its customer-service inbox.",
+     "type": "multi",
+     "rows": [
+      "Which inbox should the new website send orders to? (the same orders@ inbox as the old website, or another)",
+      "Who reads that inbox and types web orders into the office system? Who is the backup?",
+      "When the warehouse runs out of an item, who marks it out of stock on the website?",
+      "Who charges the card and adds the freight?",
+      "Who approves new customer applications, and who reviews claims?"
+     ]
+    },
+    {
+     "id": "u17",
+     "t": "Web orders and the office system",
+     "w": "The tech guy is setting up the office system. Its maker sells an add-on that pulls web orders into it by itself (price by quote).",
+     "type": "multi",
+     "rows": [
+      "On the OLD website, did orders go into the office system by themselves, or did someone type them in?",
+      "Should the new website feed orders into the office system by itself, or should someone type them in?"
+     ]
+    },
+    {
+     "id": "u18",
+     "t": "Launch morning: the old website stops taking orders",
+     "w": "On launch day (planned for Monday September 14, 8 AM; Nicholas confirms the day) the old website stops taking orders and the new one takes over. For the first week a few orders may still land on the old website.",
+     "type": "multi",
+     "rows": [
+      "Who turns ordering off on the old website that morning and tells the office? (you, or initials)",
+      "Who keeps the list of any orders that still come in on the old website that first week, so nothing ships twice?"
+     ]
+    },
+    {
+     "id": "u10",
+     "t": "Hiding prices from people who aren't customers: good enough, or hide everything?",
+     "w": "Today, on the old website, anyone can see your wholesale prices without logging in. The new website makes people log in first. A person with computer know-how could still dig out the single prices; the quantity prices and the catalogs stay behind the login (Nicholas checks this before the launch). That is no worse than today. Hiding every price completely means rebuilding part of the website, and the launch moves back.",
+     "type": "choice",
+     "opts": [
+      "Good enough: same as today, open on time (Nicholas recommends)",
+      "Hide every price, even if the launch moves back"
+     ],
+     "note": "Anything to add (optional)"
+    },
+    {
+     "id": "u12",
+     "t": "The office check before a web order is filled",
+     "w": "Nicholas suggests this rule. Before the office fills a web order, someone checks two things: (1) the customer is an approved wholesale account, and (2) the order shows that wholesale prices were applied (the order says so). If either is missing, call the buyer first and enter the order by hand. Note: customers who applied years ago but were never formally approved can already log in and see prices, by your July decision; this check is only about the orders they place.",
+     "type": "multi",
+     "rows": [
+      "Agreed? (yes, or what to change)",
+      "Who does that check, and who is the backup? (initials)"
+     ]
+    },
+    {
+     "id": "u14",
+     "t": "Showroom pickup: ask the customer once, not twice (this answer is used for Moby Dick too)",
+     "w": "Today the customer is asked twice. In the cart: \"How will you get this order?\" Then again at checkout, a Ship / Pickup switch the website adds by itself. Keep only one.",
+     "type": "choice",
+     "opts": [
+      "Keep our cart question, remove the checkout switch",
+      "Keep the checkout switch, remove our cart question"
+     ],
+     "note": "Anything to add (optional)"
+    },
+    {
+     "id": "u13",
+     "t": "Hours: the old website says two different things. Which is true?",
+     "w": "Old website footer: Mon–Fri 8 AM–3 PM. Old contact page: Mon–Thu 8–4, showroom by appointment 8:15–2:15. New website today: Mon–Thu 8–3. The old Moby Dick website says the same two things.",
+     "type": "multi",
+     "rows": [
+      "Office hours (days and times)",
+      "Showroom hours, or by appointment only?",
+      "Are you open on Fridays?",
+      "Same hours for Moby Dick? (SAME, or the difference)"
+     ]
+    }
+   ],
+   "chips": [
+    "Not sure",
+    "Ask Dad",
+    "In person"
+   ]
+  },
+  {
+   "id": "mds",
+   "title": "2. Moby Dick website",
+   "lead": "10 questions. Most can be answered \"Same as Upper Deck\".",
+   "qs": [
+    {
+     "id": "m1",
+     "t": "The Moby Dick minimum is $250. Do you count it at the regular price, or after the quantity discount?",
+     "w": "Every page of the old Moby Dick website says $250 (the $75 was only in the printed 2022–23 book). Example: 18 of one item can be $270 at the regular price but $240 after its quantity discount.",
+     "type": "choice",
+     "opts": [
+      "Same as my Upper Deck answer",
+      "The regular price, before any quantity discount",
+      "After the quantity discount"
+     ],
+     "note": "Anything to add (optional)"
+    },
+    {
+     "id": "m13",
+     "t": "The $75 showroom minimum for Moby Dick: keep it?",
+     "w": "A separate $75 minimum for customers who buy in the showroom, on top of the $250 for web orders.",
+     "type": "choice",
+     "opts": [
+      "Same as my Upper Deck answer",
+      "Yes, keep the $75 showroom minimum",
+      "No, drop it"
+     ],
+     "note": "Anything to add (optional)"
+    },
+    {
+     "id": "m2",
+     "t": "Four MR items: the single price went up, but the 12+ price did not. What should the 12+ price be?",
+     "w": "On the old website the single price of these four was raised. Their 12+ price on the new website is still the old one, so it looks too low. These are newer than the printed book, so only you have the number. The prices are not printed here; the old website shows them if you want to look. Nicholas will text you the sheet with the numbers.",
+     "type": "table",
+     "cols": [
+      "Item",
+      "The right 12+ price"
+     ],
+     "rows": [
+      [
+       "MR-419"
+      ],
+      [
+       "MR-413"
+      ],
+      [
+       "MR-412"
+      ],
+      [
+       "MR-426"
+      ]
+     ]
+    },
+    {
+     "id": "m2b",
+     "t": "MA-1051: the website shows a 4+ price that is one cent under the single price",
+     "w": "It came over from the old website that way. A one-cent discount looks like a typo. There is also an 8+ price, which looks fine. Nicholas will text you the sheet with the numbers.",
+     "type": "choice",
+     "opts": [
+      "Delete the 4+ price, keep the single and 8+ prices (Nicholas recommends)",
+      "It's real, keep it",
+      "Write the right prices below"
+     ],
+     "note": "The right prices, if you want to write them"
+    },
+    {
+     "id": "m3",
+     "t": "The 41 MR resin figures: one price only, or quantity discounts?",
+     "w": "Right now the new website shows ONE price for each of the 41 MR resin figures, with no quantity discount. The old website had quantity prices for them; they were taken off the new website in August while the prices were being checked. None of the 41 are in the printed book. Nicholas will text you the sheet with the numbers.",
+     "type": "choice",
+     "opts": [
+      "Use the same quantity prices the old website had",
+      "One price only, no quantity discount",
+      "Send me the list and I'll mark each one"
+     ],
+     "note": "Anything to add (optional)"
+    },
+    {
+     "id": "m4",
+     "t": "Paying for a Moby Dick web order: same as your Upper Deck answer?",
+     "w": "The old Moby Dick website uses the same paying words as Upper Deck (check, Visa, MasterCard, plus postage). On the Upper Deck page you answered when the card is charged, first orders, checks, and terms.",
+     "type": "choice",
+     "opts": [
+      "Same as Upper Deck",
+      "Different (write it below)"
+     ],
+     "note": "If different, write it here"
+    },
+    {
+     "id": "m15",
+     "t": "Items with a minimum (Min. 4 and so on): same rule as your Upper Deck answer?",
+     "w": "On the Upper Deck page you chose whether each item keeps its old-website rule, or one rule for all. Moby Dick items have minimums too.",
+     "type": "choice",
+     "opts": [
+      "Same as Upper Deck",
+      "Different (write it below)"
+     ],
+     "note": "If different, write it here"
+    },
+    {
+     "id": "m10",
+     "t": "Who handles the Moby Dick web orders?",
+     "w": "The old Moby Dick website prints its own orders@ inbox on every page.",
+     "type": "multi",
+     "rows": [
+      "Same people as your Upper Deck answer? (SAME, or initials)",
+      "Should the new website send orders to the same orders@ inbox as the old Moby Dick website, or another?",
+      "Who types Moby Dick web orders into the office system, and who is the backup?",
+      "Launch morning: who turns ordering off on the old Moby Dick website? (SAME as Upper Deck, or initials)",
+      "Who keeps the list of any orders that still come in on the old Moby Dick website that first week? (SAME, or initials)"
+     ]
+    },
+    {
+     "id": "m14",
+     "t": "Three items the old website stopped selling but the new website still sells. Are they in the warehouse?",
+     "w": "MB-1162, MR-153 and MS-513. If they are really on the shelf to ship, the new website keeps selling them. If not, they should show sold out.",
+     "type": "table",
+     "cols": [
+      "Item",
+      "IN STOCK or SOLD OUT"
+     ],
+     "rows": [
+      [
+       "MB-1162"
+      ],
+      [
+       "MR-153"
+      ],
+      [
+       "MS-513"
+      ]
+     ]
+    },
+    {
+     "id": "m12",
+     "t": "Hiding prices from people who aren't customers: same as your Upper Deck answer?",
+     "w": "On the Upper Deck page you chose between \"good enough, same as today, open on time\" and \"hide every price, even if the launch moves back\".",
+     "type": "choice",
+     "opts": [
+      "Same as Upper Deck",
+      "Different (write it below)"
+     ],
+     "note": "If different, write it here"
+    }
+   ],
+   "chips": [
+    "Same as Upper Deck",
+    "Not sure",
+    "Ask Dad"
+   ]
+  },
+  {
+   "id": "props",
+   "title": "3. Properties",
+   "lead": "For each one: who owns it, what it's worth, what's owed. Rough numbers are fine. Never type account numbers, tell Nicholas in person.",
+   "qs": [
+    {
+     "id": "p1",
+     "t": "The warehouse (Fairhaven)",
+     "type": "multi",
+     "rows": [
+      "Who owns it on paper (a trust, a company, a person)?",
+      "Mortgage: which bank, what's owed today, and the monthly payment",
+      "What do you think it would sell for today?",
+      "Does the business pay rent for it? To whom, and how much a year?"
+     ]
+    },
+    {
+     "id": "p2",
+     "t": "The two lots next to the warehouse",
+     "type": "multi",
+     "rows": [
+      "Who owns them on paper?",
+      "Anything owed on them?",
+      "What would they sell for today?"
+     ]
+    },
+    {
+     "id": "p3",
+     "t": "The Westport Point units (ours: 2, 4, 6)",
+     "type": "multi",
+     "rows": [
+      "Who owns our units on paper?",
+      "Mortgage: bank, balance owed today, monthly payment",
+      "What would our units sell for today?",
+      "Rent they earn per year"
+     ]
+    },
+    {
+     "id": "p4",
+     "t": "Your home",
+     "type": "multi",
+     "rows": [
+      "Mortgage: bank, balance owed today, monthly payment",
+      "Any second mortgage or home-equity line: balance owed",
+      "What would it sell for today?"
+     ]
+    },
+    {
+     "id": "p5",
+     "t": "Nicholas's house",
+     "type": "multi",
+     "rows": [
+      "First mortgage: bank, balance owed, monthly payment, whose name",
+      "Second mortgage: bank, balance owed, monthly payment, whose name",
+      "Rent unit 2 earns"
+     ]
+    },
+    {
+     "id": "p6",
+     "t": "The New Bedford retail building",
+     "type": "multi",
+     "rows": [
+      "Mortgage: bank, balance owed today, monthly payment",
+      "What would it sell for today?",
+      "Rent it earns per year"
+     ]
+    },
+    {
+     "id": "p7",
+     "t": "The old church (New Bedford)",
+     "type": "multi",
+     "rows": [
+      "Do we own it today, and in whose name?",
+      "Anything owed on it?",
+      "What would it sell for today?"
+     ]
+    },
+    {
+     "id": "p8",
+     "t": "Any other property, land, or rental we haven't listed, including the house that is rented out short-term",
+     "type": "text",
+     "ph": "A nickname is fine: who owns it, what's owed, what it would sell for, what it earns a year"
+    }
+   ],
+   "chips": [
+    "Not sure",
+    "Ask Dad",
+    "Need records",
+    "In person"
+   ]
+  },
+  {
+   "id": "biz",
+   "title": "4. The businesses",
+   "lead": "Upper Deck, Moby Dick Specialties, Moby Dick Nauticals, The Bedford Merchant. What they own, what they owe, what they make.",
+   "qs": [
+    {
+     "id": "b1",
+     "t": "Who owns the businesses, and what percent each?",
+     "type": "text",
+     "ph": "Dad %, Mom %, anyone else. One company or several?"
+    },
+    {
+     "id": "b2",
+     "t": "Inventory at cost, today",
+     "type": "multi",
+     "rows": [
+      "In the warehouse (the number from the office system, or your best estimate)",
+      "In the Moby Dick Nauticals shop",
+      "In The Bedford Merchant shop"
+     ]
+    },
+    {
+     "id": "b4",
+     "t": "Cash in the business accounts today",
+     "type": "text",
+     "ph": "A range is fine"
+    },
+    {
+     "id": "b5",
+     "t": "What the businesses owe",
+     "type": "multi",
+     "rows": [
+      "Bank loans or credit lines: bank, balance owed, payment",
+      "Money owed to suppliers right now (rough)",
+      "Anything else owed"
+     ]
+    },
+    {
+     "id": "b6",
+     "t": "What the businesses make",
+     "w": "The number off 2025's tax return is fine, or a rough guess.",
+     "type": "multi",
+     "rows": [
+      "2025 profit for the wholesale side, after your and Dad's pay",
+      "2025 profit for each retail shop",
+      "What you and Dad take out per year, roughly"
+     ]
+    },
+    {
+     "id": "b7",
+     "t": "Equipment, trucks, vehicles the businesses own",
+     "type": "text",
+     "ph": "What, and rough value"
+    },
+    {
+     "id": "b8",
+     "t": "The businesses' accountant, so Nicholas can ask for any numbers you don't have handy",
+     "type": "text",
+     "ph": "Name, and an email or phone number"
+    }
+   ],
+   "chips": [
+    "Not sure",
+    "Ask Dad",
+    "Need records",
+    "In person"
+   ]
+  },
+  {
+   "id": "trusts",
+   "title": "5. Trusts and companies",
+   "lead": "So each asset lands under the right owner.",
+   "qs": [
+    {
+     "id": "t1",
+     "t": "The family realty trust: what it owns, and who the beneficiaries are",
+     "type": "text"
+    },
+    {
+     "id": "t2",
+     "t": "The family realty LLC: what it owns, and who the members are (percent each)",
+     "type": "text"
+    },
+    {
+     "id": "t3",
+     "t": "Any other trust, LLC, or company in the family, including one that is closed or being closed: name, what it holds, who owns it, and if closed, when",
+     "type": "text"
+    },
+    {
+     "id": "t4",
+     "t": "Where are the papers kept (deeds, trust papers, company papers), and who is the trustee?",
+     "type": "text",
+     "ph": "A drawer, a lawyer's office, a safe; the trustee's role (Dad, you, a lawyer)"
+    },
+    {
+     "id": "t5",
+     "t": "Is there a will or an estate plan? With which lawyer?",
+     "type": "text",
+     "ph": "Yes / no / not sure; the law office"
+    }
+   ],
+   "chips": [
+    "Not sure",
+    "Ask Dad",
+    "Need records",
+    "In person"
+   ]
+  },
+  {
+   "id": "cash",
+   "title": "6. Cash, investments, debt",
+   "lead": "Totals and ranges. Names of banks, never account numbers.",
+   "qs": [
+    {
+     "id": "c1",
+     "t": "Cash and investments, total today",
+     "type": "multi",
+     "rows": [
+      "Checking and savings: which banks, rough total",
+      "Investments and retirement (brokerage, IRA, 401k, pension): where, rough total"
+     ]
+    },
+    {
+     "id": "c3",
+     "t": "Life insurance with a cash value, if any",
+     "type": "text",
+     "ph": "Company, cash value, death benefit"
+    },
+    {
+     "id": "c4",
+     "t": "Personal debts other than mortgages",
+     "type": "multi",
+     "rows": [
+      "Credit cards carried month to month: total owed",
+      "Car loans, personal loans, lines of credit: total owed"
+     ]
+    },
+    {
+     "id": "c5",
+     "t": "Vehicles, boats, or valuables worth more than $10k",
+     "type": "text",
+     "ph": "What, and rough value"
+    },
+    {
+     "id": "c6",
+     "t": "Money owed between family members, or to or from anyone else",
+     "type": "text",
+     "ph": "Who owes whom, rough amount"
+    }
+   ],
+   "chips": [
+    "Not sure",
+    "Ask Dad",
+    "Need records",
+    "In person"
+   ]
+  },
+  {
+   "id": "you",
+   "title": "7. Anything else",
+   "lead": "One question.",
+   "qs": [
+    {
+     "id": "x1",
+     "t": "Anything you own or owe that isn't on this page",
+     "type": "text"
+    }
+   ],
+   "chips": [
+    "Not sure",
+    "Ask Dad",
+    "Need records",
+    "In person"
+   ]
+  }
+ ]
+}
