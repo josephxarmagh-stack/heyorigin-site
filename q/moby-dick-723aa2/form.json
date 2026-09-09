@@ -112,7 +112,8 @@
       "Same people as your Upper Deck answer? (SAME, or initials)",
       "Should the new website send orders to the same orders@ inbox as the old Moby Dick website, or another?",
       "Who types Moby Dick web orders into the office system, and who is the backup?",
-      "Launch morning: same person as Upper Deck turns ordering off on the old Moby Dick website and keeps the list of any orders that still come in there? (SAME, or initials)"
+      "Launch morning: who turns ordering off on the old Moby Dick website? (SAME as Upper Deck, or initials)",
+      "Who keeps the list of any orders that still come in on the old Moby Dick website that first week? (SAME, or initials)"
      ]
     },
     {

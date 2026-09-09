@@ -37,7 +37,7 @@
      "w": "The old website says: \"check, Visa, or MasterCard for full amount, plus postage with order unless other financial arrangements have been made.\" The new website is built to charge the card once, when the order ships, for the goods plus the real freight.",
      "type": "multi",
      "rows": [
-      "Keep charging the card when the order SHIPS (goods plus the real freight)? Or charge it when the order is PLACED?",
+      "When should the card be charged: when the order SHIPS (goods plus the real freight), or when the order is PLACED?",
       "A brand-new customer with no card on file places a first order. What should happen?",
       "Do you still take checks?",
       "Are there customers who pay on terms (net 30) instead of a card? Which ones?"
@@ -46,7 +46,7 @@
     {
      "id": "u3",
      "t": "Five items: the quantity price is HIGHER than the single price. Which one is right?",
-     "w": "A quantity price should be lower, not higher. These five came over from the old website that way. For each line type SINGLE if the single price is right, QUANTITY if the quantity price is right, or type the right prices. The numbers are not printed here; they are the same as on the old website today if you want to look.",
+     "w": "A quantity price should be lower, not higher. These five came over from the old website that way. For each line type SINGLE if the single price is right, QUANTITY if the quantity price is right, or type the right prices. The numbers are not printed here; they are the same as on the old website today if you want to look. If you don't want to look them up, type LOOK LATER on any line and Nicholas will text you the two numbers for that item.",
      "type": "table",
      "cols": [
       "Item",
