@@ -22,40 +22,30 @@
     {
      "id": "m2",
      "t": "Four items whose base price went up (bases verified on the old site). What is their 12+ price?",
-     "w": "The site shows a 12+ price BELOW the old one. These items are newer than the printed book, so only you have the number.",
+     "w": "The site's 12+ price for these is below the old one. They are newer than the printed book, so only you have the number. (No prices on this page.)",
      "type": "table",
      "cols": [
       "Item",
-      "Base now",
-      "Site shows at 12+",
       "Correct 12+ price"
      ],
      "rows": [
       [
-       "MR-419",
-       "$3.50",
-       "$3.25"
+       "MR-419"
       ],
       [
-       "MR-413",
-       "$3.25",
-       "$3.00"
+       "MR-413"
       ],
       [
-       "MR-412",
-       "$3.25",
-       "$3.00"
+       "MR-412"
       ],
       [
-       "MR-426",
-       "$3.75",
-       "$3.50"
+       "MR-426"
       ]
      ]
     },
     {
      "id": "m2b",
-     "t": "MA-1051: base $3.65, the site shows 4+ at $3.64 and 8+ at $3.35. Is the 4+ price real, or delete it?",
+     "t": "MA-1051: the site shows a 4+ price one cent under the base price, then an 8+ price. Is the 4+ price real, or delete it?",
      "type": "text"
     },
     {
@@ -124,7 +114,7 @@
      "w": "Found: orders@mobydickspecialties.com is on every old-site page, fax 508-994-9830. (The old Why Register page still prints the dead 1-800 number and a misspelled email — ignore those.)",
      "type": "multi",
      "rows": [
-      "Same people as Upper Deck? (SAME, or names)",
+      "Same people as Upper Deck? (SAME, or roles/initials)",
       "orders@mobydickspecialties.com is the inbox — correct?",
       "Who keys Moby Dick web orders into Acctivate / backup"
      ]

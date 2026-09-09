@@ -53,7 +53,7 @@
     },
     {
      "id": "p5",
-     "t": "Nicholas's house (Mattapoisett)",
+     "t": "Nicholas's house",
      "type": "multi",
      "rows": [
       "First mortgage: bank, balance owed, monthly payment, whose name",
@@ -86,7 +86,7 @@
      "id": "p8",
      "t": "Any other property, land, or rental we haven't listed",
      "type": "text",
-     "ph": "Address, who owns it, what's owed, what it's worth"
+     "ph": "Which one (a nickname is fine), who owns it, what's owed, what it's worth"
     }
    ]
   },
@@ -154,12 +154,12 @@
    "qs": [
     {
      "id": "t1",
-     "t": "PAP Realty Trust: what it owns, and who the beneficiaries are",
+     "t": "The family realty trust: what it owns, and who the beneficiaries are",
      "type": "text"
     },
     {
      "id": "t2",
-     "t": "Jo-Jeanne Realty LLC: what it owns, and who the members are (percent each)",
+     "t": "The family realty LLC: what it owns, and who the members are (percent each)",
      "type": "text"
     },
     {

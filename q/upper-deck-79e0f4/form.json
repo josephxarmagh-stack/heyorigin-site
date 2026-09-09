@@ -12,7 +12,7 @@
     {
      "id": "u1",
      "t": "The $250 minimum: counted before or after quantity discounts?",
-     "w": "Settled by research: both old sites say \"ONLY $250 MINIMUM PURCHASE\" on every page, and the old cart shows a separate $75 showroom minimum for showroom customers. What no page says is whether the $250 is counted at list price or after the quantity breaks (example: 18 rabbits are $256.50 at list, $229.50 after the break).",
+     "w": "Settled by research: both old sites say \"ONLY $250 MINIMUM PURCHASE\" on every page, and the old cart shows a separate $75 showroom minimum for showroom customers. What no page says is whether the $250 is counted at list price or after the quantity breaks (example: 18 of one item can be over $250 at list price and under $250 after its quantity break).",
      "type": "choice",
      "opts": [
       "$250 at list price (before breaks)",
@@ -32,179 +32,143 @@
     },
     {
      "id": "u3",
-     "t": "Five items show a quantity price HIGHER than the single price. Which number is right?",
-     "w": "The catalog already settles one: X2060 prints \"4 @ $11.75 ea.\" (same as the single price), so its $13.75 break is wrong. The other four are not in the printed books.",
+     "t": "Five items show a quantity price HIGHER than their single price. Which number is right?",
+     "w": "The 2026 garden catalog settles one: X2060 prints its 4+ price equal to the single price, so the site's higher 4+ price is wrong. The other four are not in the printed books. (Prices are not printed on this page: check them on the site while logged in, or on the sheet Nicholas shows you.)",
      "type": "table",
      "cols": [
       "Item",
-      "Single",
-      "Quantity price shown",
-      "Your ruling"
+      "Your ruling: single price stands · quantity price stands · or write the right numbers"
      ],
      "rows": [
       [
-       "L434",
-       "$27.50",
-       "4+ @ $29.50"
+       "L434"
       ],
       [
-       "UAL128",
-       "$64.50",
-       "6+ @ $67.50"
+       "UAL128"
       ],
       [
-       "UDXL201",
-       "$124.50",
-       "3+ @ $127.50"
+       "UDXL201"
       ],
       [
-       "UT906",
-       "$12.50",
-       "12+ @ $13.50"
+       "UT906"
       ],
       [
-       "X2060",
-       "$11.75",
-       "4+ @ $13.75 — catalog says 4 @ $11.75"
+       "X2060 (catalog: 4+ = single price)"
       ]
      ]
     },
     {
      "id": "u4",
-     "t": "23 items had their quantity tables cleared on 8/19. Base price only, or these tiers?",
-     "w": "Five are printed in the 2026 books and are filled in below as \"catalog says\" — confirm or change them. The other 18 are not in the books: write B for base only, T for the July tiers, or the correct tiers.",
+     "t": "23 items had their quantity tables cleared on 8/19. Base price only, or bring tiers back?",
+     "w": "Five of them are printed in the 2026 books (page noted), the other 18 are not. Write B = base price only, T = the tiers from the July import, C = the tiers the catalog prints, or write the right tiers yourself. (No prices on this page; Nicholas has the July and catalog numbers on his sheet.)",
      "type": "table",
      "cols": [
       "Item",
-      "Base",
-      "Old tiers (July import)",
-      "Your ruling"
+      "Printed in a 2026 book?",
+      "Your ruling (B / T / C / numbers)"
      ],
      "rows": [
       [
        "UT591",
-       "$7.25",
-       "2+ 7.75 · 4+ 6.95"
+       "no"
       ],
       [
        "UW2616",
-       "$55.00",
-       "1+ 55.50 · 2+ 52.50"
+       "Master p.74"
       ],
       [
        "UX4016",
-       "$9.95",
-       "1+ 9.50 · 2+ 9.00"
+       "Garden p.89"
       ],
       [
        "UX4136",
-       "$10.75",
-       "3+ 10.25 · 6+ 9.75"
+       "no"
       ],
       [
        "UX4237",
-       "$12.00",
-       "2+ 11.25 · 4+ 10.75"
+       "no"
       ],
       [
        "UX4428",
-       "$10.25",
-       "2+ 9.75 · 4+ 9.25"
+       "Garden p.14"
       ],
       [
        "UX4454",
-       "$2.49",
-       "6+ 2.50 · 12+ 2.35"
+       "Master p.13"
       ],
       [
        "UX9179",
-       "$54.50",
-       "4+ 54.50"
+       "no"
       ],
       [
        "UX9260",
-       "$27.50",
-       "2+ 32.50 · 4+ 29.50"
+       "Garden p.30"
       ],
       [
        "X1366",
-       "$13.50",
-       "3+ 12.75 · 6+ 12.25"
+       "no"
       ],
       [
        "X1877",
-       "$16.50",
-       "2+ 15.25 · 4+ 13.75"
+       "no"
       ],
       [
        "X2241",
-       "$17.50",
-       "2+ 16.75 · 4+ 16.25"
+       "no"
       ],
       [
        "X2297",
-       "$9.50",
-       "4+ 9.00 · 6+ 8.50"
+       "no"
       ],
       [
        "X2401",
-       "$21.50",
-       "2+ 18.75 · 4+ 17.75"
+       "no"
       ],
       [
        "X2521",
-       "$14.25",
-       "2+ 13.50 · 4+ 12.75"
+       "no"
       ],
       [
        "X2593",
-       "$11.75",
-       "3+ 10.50 · 6+ 9.75"
+       "no"
       ],
       [
        "X2627",
-       "$11.75",
-       "4+ 10.50 · 8+ 9.75"
+       "no"
       ],
       [
        "X2628",
-       "$8.25",
-       "3+ 7.75 · 6+ 7.25"
+       "no"
       ],
       [
        "X2639",
-       "$11.75",
-       "3+ 10.50 · 6+ 9.75"
+       "no"
       ],
       [
        "X2640",
-       "$10.95",
-       "3+ 9.95 · 6+ 9.25"
+       "no"
       ],
       [
        "X5042",
-       "$6.25",
-       "4+ 5.75 · 8+ 5.25"
+       "no"
       ],
       [
        "X648",
-       "$13.25",
-       "3+ 12.50 · 6+ 12.00"
+       "no"
       ],
       [
        "X683",
-       "$6.75",
-       "4+ 6.25 · 12+ 5.95"
+       "no"
       ]
      ]
     },
     {
      "id": "u5",
      "t": "\"Min. N\" items: the old site sets the rule PER ITEM.",
-     "w": "Research found the old site's own settings: Cardinal (Min. 4) must be bought in twos above 4; X2060 (Min. 4) can be any amount above 4. Today the new site treats every Min. item as \"at least N, then any amount\".",
+     "w": "Research found the old site's own settings: Cardinal (Min. 4) must be bought in twos above 4; X2060 (Min. 4) can be any amount above 4. On 9/8 Nicholas set the new site to copy each item's old rule exactly (34 items changed). Confirm, or pick another rule.",
      "type": "choice",
      "opts": [
-      "Copy each item's old-site rule exactly (Nicholas recommends)",
+      "Keep it: each item's old-site rule, exactly (done 9/8)",
       "One rule for all: at least N, then any amount",
       "One rule for all: multiples of N"
      ]
@@ -242,11 +206,11 @@
     },
     {
      "id": "u9",
-     "t": "Who runs the web orders from launch day (names, primary and backup)",
+     "t": "Who runs the web orders from launch day (roles or initials, primary and backup)",
      "w": "Research found: the old site publishes orders@upperdeckltd.com for orders, customerservice@upperdeckltd.com for claims, and customer-service phone 508-992-3827. Acctivate does sell a Shopify integration that downloads orders by itself (setup and price by quote).",
      "type": "multi",
      "rows": [
-      "Who receives the order email (name), and is orders@upperdeckltd.com the right inbox?",
+      "Who receives the order email (role or initials), and is orders@upperdeckltd.com the right inbox?",
       "Who keys web orders into Acctivate / backup",
       "Did the OLD website drop orders into Acctivate by itself, or did someone key them? Should the new one connect (the tech guy is setting Acctivate up)?",
       "Who updates stock on the site when the warehouse runs out",
@@ -267,7 +231,7 @@
     {
      "id": "u11",
      "t": "Product facts — research settled most of these, confirm the rest",
-     "w": "Found: P465 Bonnet Girls and A140 Nevr-Dull are sold by the DOZEN (\"Quantity 1 = 12\"); the catalog prints P465 \"16 dz. cl.\" = 192 pieces per case and A140 \"6 dz. cl.\" = 72 pieces per case at $39.50 a dozen. Nicholas fixes the new site's case-lot labels to match. Cellphone Holders never existed as a category on the old site.",
+     "w": "Found: P465 Bonnet Girls and A140 Nevr-Dull are sold by the DOZEN (\"Quantity 1 = 12\"); the catalog prints P465 \"16 dz. cl.\" = 192 pieces per case and A140 \"6 dz. cl.\" = 72 pieces per case. The new site's labels were fixed 9/8 to match. Cellphone Holders never existed as a category on the old site.",
      "type": "multi",
      "rows": [
       "P465 and A140: unit = one dozen, cases = 16 dozen and 6 dozen — correct?",

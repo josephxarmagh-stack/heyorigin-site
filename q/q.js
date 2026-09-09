@@ -3,8 +3,8 @@
 (function () {
   var slug = location.pathname.replace(/\/+$/, "").split("/").pop();
   var CFG = window.Q_CONFIG || {};
-  var F, Q, KEY = "origin-q-" + slug, answers = {}, whoEl = document.getElementById("pr-who"), root = document.getElementById("pr");
-  try { answers = JSON.parse(localStorage.getItem(KEY) || "{}"); whoEl.value = localStorage.getItem("origin-q-who") || ""; } catch (e) {}
+  var F, Q, KEY = "origin-q-" + slug, answers = {}, whoEl = document.getElementById("pr-who"), root = document.getElementById("pr"), storageBroken = false, device = "";
+  try { answers = JSON.parse(localStorage.getItem(KEY) || "{}"); whoEl.value = localStorage.getItem("origin-q-who") || ""; device = localStorage.getItem("origin-q-device") || ""; if (!device) { device = Math.random().toString(36).slice(2, 10) + Math.random().toString(36).slice(2, 6); localStorage.setItem("origin-q-device", device); } } catch (e) { storageBroken = true; device = "nostore-" + Math.random().toString(36).slice(2, 8); }
   function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", "\"": "&quot;" }[c]; }); }
   function key(id, sub) { return id + (sub !== undefined ? "-" + sub : ""); }
   function val(k) { return (answers[k] || "").trim(); }
@@ -42,7 +42,7 @@
   function counts() {
     Q.forEach(function (sec) { var done = sec.qs.filter(isAnswered).length, all = sec.qs.length; var el = document.getElementById("count-" + sec.id); el.textContent = done + " of " + all + " answered"; el.className = "count" + (done === all ? " done" : ""); });
   }
-  function save(k, v) { answers[k] = v; try { localStorage.setItem(KEY, JSON.stringify(answers)); } catch (e) {} counts(); }
+  function save(k, v) { answers[k] = v; try { localStorage.setItem(KEY, JSON.stringify(answers)); } catch (e) { storageBroken = true; } counts(); }
   function compile(secId) {
     var sec = Q.filter(function (s) { return s.id === secId; })[0];
     var out = [F.title.toUpperCase() + (Q.length > 1 ? " — " + sec.title : ""), "From: " + (whoEl.value || F.who) + " · " + new Date().toLocaleDateString("en-US", { month: "short", day: "numeric" }), ""], n = 0;
@@ -68,19 +68,30 @@
     return o;
   }
   // ---- save to the store ----
-  var timers = {}, lastSent = {};
-  function status(id, cls, msg) { var el = document.getElementById("saved-" + id); if (el) { el.className = "saved" + (cls ? " " + cls : ""); el.textContent = msg; } }
+  // One request in flight per section; every edit bumps that section's revision; "Saved" is shown only when the
+  // response belongs to the revision that is still current. An emptied section is sent as an explicit "(cleared)".
+  var timers = {}, lastSent = {}, rev = {}, inflight = {};
+  function status(id, cls, msg) { var el = document.getElementById("saved-" + id); if (el) { el.className = "saved" + (cls ? " " + cls : ""); el.textContent = msg + (storageBroken ? " · This phone cannot keep a copy, so stay on this page until it says Saved." : ""); } }
   function push(id, force) {
-    var text = compile(id); if (!text) return;
+    var text = compile(id) || (lastSent[id] ? "(cleared)" : "");
+    if (!text) return;
     if (!force && lastSent[id] === text) return;
     if (!CFG.url || !CFG.key) { status(id, "bad", "Saving is not switched on yet. Use Text it instead."); return; }
+    if (inflight[id]) { inflight[id] = "again"; return; }
+    var myRev = rev[id] || 0; inflight[id] = true;
     status(id, "busy", "Saving…");
-    fetch(CFG.url + "/rest/v1/answers", { method: "POST", headers: { "Content-Type": "application/json", "apikey": CFG.key, "Authorization": "Bearer " + CFG.key, "Prefer": "return=minimal" },
-      body: JSON.stringify({ form: slug, section: id, who: (whoEl.value || F.who), answers: sectionAnswers(id), text: text }) })
-      .then(function (r) { if (!r.ok) throw new Error(r.status); lastSent[id] = text; try { localStorage.setItem(KEY + "-sent-" + id, text); } catch (e) {} status(id, "", "Saved to Nicholas ✓ " + new Date().toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" })); })
-      .catch(function () { status(id, "bad", "Not saved yet (no signal?). It will retry, or tap Save now."); setTimeout(function () { push(id); }, 30000); });
+    fetch(CFG.url + "/rest/v1/answers", { method: "POST", keepalive: true, headers: { "Content-Type": "application/json", "apikey": CFG.key, "Authorization": "Bearer " + CFG.key, "Prefer": "return=minimal" },
+      body: JSON.stringify({ form: slug, section: id, who: (whoEl.value || F.who), device: device, answers: sectionAnswers(id), text: text }) })
+      .then(function (r) {
+        if (!r.ok) throw new Error(r.status);
+        var again = inflight[id] === "again"; inflight[id] = false;
+        if ((rev[id] || 0) !== myRev || again) { push(id, true); return; }
+        lastSent[id] = text; try { localStorage.setItem(KEY + "-sent-" + id, text); } catch (e) {}
+        status(id, "", "Saved to Nicholas ✓ " + new Date().toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" }));
+      })
+      .catch(function () { inflight[id] = false; status(id, "bad", "Not saved yet (no signal?). It will retry, or tap Save now."); setTimeout(function () { push(id); }, 30000); });
   }
-  function schedule(id) { clearTimeout(timers[id]); status(id, "busy", "Typing… saves in a moment"); timers[id] = setTimeout(function () { push(id); }, 6000); }
+  function schedule(id) { rev[id] = (rev[id] || 0) + 1; clearTimeout(timers[id]); status(id, "busy", "Typing… saves in a moment"); timers[id] = setTimeout(function () { push(id); }, 6000); }
   function sectionOf(el) { var s = el.closest("section.sec"); return s ? s.id.replace("sec-", "") : null; }
   root.addEventListener("input", function (e) { var el = e.target; if (el.dataset && el.dataset.k) save(el.dataset.k, el.value); if (el === whoEl) { try { localStorage.setItem("origin-q-who", whoEl.value); } catch (x) {} } var id = sectionOf(el); if (id) schedule(id); });
   root.addEventListener("change", function (e) { var el = e.target; if (el.type !== "radio") return; save(el.name, el.value); document.querySelectorAll('input[name="' + el.name + '"]').forEach(function (r) { r.closest(".choice").classList.toggle("picked", r.checked); }); var id = sectionOf(el); if (id) schedule(id); });
