@@ -341,6 +341,116 @@
      ]
     }
    ]
+  },
+  {
+   "id": "round2",
+   "title": "Round 2: seven follow-ups from your answers",
+   "lead": "Thank you. Your answers set most of the launch. These seven are what's left; short answers are fine.",
+   "chips": [
+    "Not sure",
+    "Ask Dad",
+    "Look later"
+   ],
+   "qs": [
+    {
+     "id": "r1",
+     "t": "The four items you marked \"fixed prices\": L434, UAL128, UDXL201, UT906. What should the website show for each?",
+     "w": "\"Fixed\" didn't tell me the number. Type the single price and, if there is one, the quantity price (example: 27.50 / 4+ 26.50), or ONE if there should be no quantity price.",
+     "type": "table",
+     "cols": [
+      "Item",
+      "Single price now",
+      "Quantity price now",
+      "What it should be"
+     ],
+     "rows": [
+      [
+       "L434",
+       "$27.50",
+       "4+ @ $29.50"
+      ],
+      [
+       "UAL128",
+       "$64.50",
+       "6+ @ $67.50"
+      ],
+      [
+       "UDXL201",
+       "$124.50",
+       "3+ @ $127.50"
+      ],
+      [
+       "UT906",
+       "$12.50",
+       "12+ @ $13.50"
+      ]
+     ]
+    },
+    {
+     "id": "r2",
+     "t": "You chose the old website's quantity prices for the 23 items. Four of those old quantity prices are HIGHER than the single price. Keep them anyway?",
+     "w": "UT591 ($7.25, old 2+ at $7.75) · UW2616 ($55.00, old 1+ at $55.50) · UX4454 ($2.49, old 6+ at $2.50) · UX9260 ($27.50, old 2+ at $32.50).",
+     "type": "choice",
+     "opts": [
+      "Drop those four higher prices, keep the rest as the old website had them (Nicholas recommends)",
+      "Keep them exactly as the old website had them",
+      "I'll write the right prices below"
+     ],
+     "note": "Prices for any of the four, if you want to write them"
+    },
+    {
+     "id": "r3",
+     "t": "UH526 Door Latch is printed \"Min. 6, Pkg. 2\". Can a customer order 7, or only 6, 8, 10?",
+     "type": "choice",
+     "opts": [
+      "Only in twos (6, 8, 10), it comes packed in pairs",
+      "Any number from 6 up, same as the other Min. items"
+     ]
+    },
+    {
+     "id": "r4",
+     "t": "The $75 showroom minimum: who gets it?",
+     "type": "choice",
+     "opts": [
+      "Any approved customer who picks \"pickup\" at checkout",
+      "Only accounts we have marked as showroom customers"
+     ],
+     "note": "Anything to add"
+    },
+    {
+     "id": "r5",
+     "t": "A first-time customer with no card on file places an order. You said the order goes through and the office calls for the card. Correct, nothing held?",
+     "type": "choice",
+     "opts": [
+      "Correct: order goes through, office calls, nothing is held",
+      "No: the website must hold money before we accept any order"
+     ]
+    },
+    {
+     "id": "r6",
+     "t": "The card portal you mentioned (customers hand us a card that goes into your office system): do you already have one in mind, or should Nicholas find one?",
+     "type": "text",
+     "ph": "A name, or \"find one\""
+    },
+    {
+     "id": "r7",
+     "t": "Showroom orders in the office system: what exact Source and PO should a showroom pickup order carry?",
+     "type": "text",
+     "ph": "The words you type today"
+    },
+    {
+     "id": "r8",
+     "t": "The office check after a web order (approved account + wholesale prices applied): who owns it and who is the backup, if the website's own checks ever fail?",
+     "type": "text",
+     "ph": "Initials, primary and backup"
+    },
+    {
+     "id": "r9",
+     "t": "Which list is the truth for \"approved wholesale customer\"? The new website imported 5,379 accounts and 3,786 of them were only prospects on the old site.",
+     "type": "text",
+     "ph": "The office system list, the old website's approved list, an Excel you keep, or \"ask me\""
+    }
+   ]
   }
  ]
 }
