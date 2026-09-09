@@ -2,7 +2,7 @@
  "slug": "family",
  "title": "The family picture",
  "who": "Mom",
- "lede": "What the family owns, what it's worth, and what's owed on it, so Nicholas can build one true net worth number. Rough numbers and ranges are fine, in any order, over as many sittings as you like. Never type an account number, password, or Social Security number here: say \"in person\" and tell him. When you finish a part, watch for the green Saved line. If the page says saving is not switched on, tap Text it instead and your answers come to Nicholas as a text.",
+ "lede": "What the family owns, what it's worth, and what's owed on it, so Nicholas can build one true net worth number. Rough numbers and ranges are fine, in any order, over as many sittings as you like. If a number needs a document you don't have handy, write \"need records\" or \"ask Dad\" and move on. Never type an account number, password, or Social Security number here: say \"in person\" and tell him. Each part sends itself to Nicholas a few seconds after you stop typing and keeps a copy on your phone.",
  "sections": [
   {
    "id": "props",
@@ -129,11 +129,11 @@
     {
      "id": "b6",
      "t": "What the businesses make",
-     "w": "The number off last year's tax return is fine, or a rough guess.",
+     "w": "The number off 2025's tax return is fine, or a rough guess.",
      "type": "multi",
      "rows": [
-      "Last year's profit for the wholesale side, after your and Dad's pay",
-      "Last year's profit for each retail shop",
+      "2025 profit for the wholesale side, after your and Dad's pay",
+      "2025 profit for each retail shop",
       "What you and Dad take out per year, roughly"
      ]
     },
@@ -170,6 +170,18 @@
      "id": "t3",
      "t": "Any other trust, LLC, or company in the family, including one that is closed or being closed: name, what it holds, who owns it, and if closed, when",
      "type": "text"
+    },
+    {
+     "id": "t4",
+     "t": "Where are the papers kept (deeds, trust papers, company papers), and who is the trustee?",
+     "type": "text",
+     "ph": "A drawer, a lawyer's office, a safe; the trustee's role (Dad, you, a lawyer)"
+    },
+    {
+     "id": "t5",
+     "t": "Is there a will or an estate plan? With which lawyer?",
+     "type": "text",
+     "ph": "Yes / no / not sure; the law office"
     }
    ]
   },
@@ -210,9 +222,9 @@
     },
     {
      "id": "c6",
-     "t": "Money owed to the family by anyone, or by the family to anyone",
+     "t": "Money owed between family members, or to or from anyone else",
      "type": "text",
-     "ph": "Including the loan to Nicholas: the number you have in mind"
+     "ph": "Who owes whom, rough amount"
     }
    ]
   },

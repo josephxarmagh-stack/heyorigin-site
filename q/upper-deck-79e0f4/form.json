@@ -2,7 +2,7 @@
  "slug": "upper-deck",
  "title": "Upper Deck: launch questions",
  "who": "Mom",
- "lede": "For the new Upper Deck website. Answer in your own words, in any order, over as many sittings as you like. When you finish a part, watch for the green Saved line. If the page says saving is not switched on, tap Text it instead and your answers come to Nicholas as a text.",
+ "lede": "For the new Upper Deck website. Answer in your own words, in any order, over as many sittings as you like. Each part sends itself to Nicholas a few seconds after you stop typing (watch for the green Sent line) and keeps a copy on your phone.",
  "sections": [
   {
    "id": "all",
@@ -18,7 +18,7 @@
       "The regular price, before any quantity discount",
       "After the quantity discount"
      ],
-     "note": "Anything to add (optional)"
+     "note": "Does the $250 minimum also apply to orders picked up at the showroom? Yes / no. Anything else to add."
     },
     {
      "id": "u15",
@@ -40,13 +40,13 @@
       "When should the card be charged: when the order SHIPS (goods plus the real freight), or when the order is PLACED?",
       "A brand-new customer with no card on file places a first order. What should happen?",
       "Do you still take checks?",
-      "Are there customers who pay on terms (net 30) instead of a card? Which ones?"
+      "Are there customers who pay on terms (net 30: they get a bill and pay within 30 days) instead of a card? Which ones?"
      ]
     },
     {
      "id": "u3",
      "t": "Five items: the quantity price is HIGHER than the single price. Which one is right?",
-     "w": "A quantity price should be lower, not higher. These five came over from the old website that way. For each line type SINGLE if the single price is right, QUANTITY if the quantity price is right, or type the right prices. The numbers are not printed here; they are the same as on the old website today if you want to look. If you don't want to look them up, type LOOK LATER on any line and Nicholas will text you the two numbers for that item.",
+     "w": "A quantity price should be lower, not higher. These five came over from the old website that way. Nicholas will text you a sheet with the two prices for each item. For each line type SINGLE if the single price is right, QUANTITY if the quantity price is right, or type the right prices. If you don't want to look them up, type LOOK LATER.",
      "type": "table",
      "cols": [
       "Item",
@@ -84,8 +84,8 @@
     },
     {
      "id": "u4",
-     "t": "Item by item (only if you picked \"item by item\" above)",
-     "w": "For each line type OLD for the old website's quantity prices, BOOK for the catalog's quantity prices (only the five lines that name a page), ONE for one price only, or type the prices yourself.",
+     "t": "Item by item",
+     "w": "Nicholas will text you the sheet with each item's old quantity prices and, for the five that are in a 2026 catalog, the catalog's prices. For each line type OLD for the old website's quantity prices, BOOK for the catalog's quantity prices (only the five lines that name a page), ONE for one price only, or type the prices yourself.",
      "type": "table",
      "cols": [
       "Item",
@@ -185,7 +185,11 @@
        "X683",
        "no"
       ]
-     ]
+     ],
+     "showIf": {
+      "id": "u4a",
+      "equals": "I'll go item by item in the next question"
+     }
     },
     {
      "id": "u5",
@@ -225,7 +229,7 @@
     {
      "id": "u18",
      "t": "Launch morning: the old website stops taking orders",
-     "w": "On launch day (Monday September 14, 8 AM) the old website stops taking orders and the new one takes over. For the first week a few orders may still land on the old website.",
+     "w": "On launch day (planned for Monday September 14, 8 AM; Nicholas confirms the day) the old website stops taking orders and the new one takes over. For the first week a few orders may still land on the old website.",
      "type": "multi",
      "rows": [
       "Who turns ordering off on the old website that morning and tells the office? (you, or initials)",
@@ -235,7 +239,7 @@
     {
      "id": "u10",
      "t": "Hiding prices from people who aren't customers: good enough, or hide everything?",
-     "w": "Today, on the old website, anyone can see your wholesale prices without logging in. The new website makes people log in first. But a person with computer know-how could still dig out the single prices (never the quantity prices, never the catalogs). That is no worse than today. Hiding every price completely means rebuilding part of the website, and the launch moves back.",
+     "w": "Today, on the old website, anyone can see your wholesale prices without logging in. The new website makes people log in first. A person with computer know-how could still dig out the single prices; the quantity prices and the catalogs stay behind the login (Nicholas checks this before the launch). That is no worse than today. Hiding every price completely means rebuilding part of the website, and the launch moves back.",
      "type": "choice",
      "opts": [
       "Good enough: same as today, open on time (Nicholas recommends)",
@@ -246,7 +250,7 @@
     {
      "id": "u12",
      "t": "The office check before a web order is filled",
-     "w": "Nicholas suggests this rule. Before the office fills a web order, someone checks two things: (1) the customer is an approved wholesale account, and (2) the order shows wholesale prices (the order will say \"Wholesale Pricing Discount\" on it). If either is missing, call the buyer first and enter the order by hand.",
+     "w": "Nicholas suggests this rule. Before the office fills a web order, someone checks two things: (1) the customer is an approved wholesale account, and (2) the order shows that wholesale prices were applied (the order says so). If either is missing, call the buyer first and enter the order by hand. Note: customers who applied years ago but were never formally approved can already log in and see prices, by your July decision; this check is only about the orders they place.",
      "type": "multi",
      "rows": [
       "Agreed? (yes, or what to change)",

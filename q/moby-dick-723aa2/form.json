@@ -2,7 +2,7 @@
  "slug": "moby-dick",
  "title": "Moby Dick: launch questions",
  "who": "Mom",
- "lede": "For the new Moby Dick Specialties website. Most of these can be answered \"Same as Upper Deck\". Answer in your own words, in any order, over as many sittings as you like. When you finish a part, watch for the green Saved line. If the page says saving is not switched on, tap Text it instead and your answers come to Nicholas as a text.",
+ "lede": "For the new Moby Dick Specialties website. Most of these can be answered \"Same as Upper Deck\". Answer in your own words, in any order, over as many sittings as you like. Each part sends itself to Nicholas a few seconds after you stop typing (watch for the green Sent line) and keeps a copy on your phone.",
  "sections": [
   {
    "id": "all",
@@ -36,7 +36,7 @@
     {
      "id": "m2",
      "t": "Four MR items: the single price went up, but the 12+ price did not. What should the 12+ price be?",
-     "w": "On the old website the single price of these four was raised. Their 12+ price on the new website is still the old one, so it looks too low. These are newer than the printed book, so only you have the number. The prices are not printed here; the old website shows them if you want to look.",
+     "w": "On the old website the single price of these four was raised. Their 12+ price on the new website is still the old one, so it looks too low. These are newer than the printed book, so only you have the number. The prices are not printed here; the old website shows them if you want to look. Nicholas will text you the sheet with the numbers.",
      "type": "table",
      "cols": [
       "Item",
@@ -60,7 +60,7 @@
     {
      "id": "m2b",
      "t": "MA-1051: the website shows a 4+ price that is one cent under the single price",
-     "w": "It came over from the old website that way. A one-cent discount looks like a typo. There is also an 8+ price, which looks fine.",
+     "w": "It came over from the old website that way. A one-cent discount looks like a typo. There is also an 8+ price, which looks fine. Nicholas will text you the sheet with the numbers.",
      "type": "choice",
      "opts": [
       "Delete the 4+ price, keep the single and 8+ prices (Nicholas recommends)",
@@ -72,7 +72,7 @@
     {
      "id": "m3",
      "t": "The 41 MR resin figures: one price only, or quantity discounts?",
-     "w": "Right now the new website shows ONE price for each of the 41 MR resin figures, with no quantity discount. The old website had quantity prices for them; they were taken off the new website in August while the prices were being checked. None of the 41 are in the printed book.",
+     "w": "Right now the new website shows ONE price for each of the 41 MR resin figures, with no quantity discount. The old website had quantity prices for them; they were taken off the new website in August while the prices were being checked. None of the 41 are in the printed book. Nicholas will text you the sheet with the numbers.",
      "type": "choice",
      "opts": [
       "Use the same quantity prices the old website had",
