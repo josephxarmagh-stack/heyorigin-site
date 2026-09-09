@@ -2,31 +2,45 @@
  "slug": "moby-dick",
  "title": "Moby Dick: launch questions",
  "who": "Mom",
- "lede": "For the new Moby Dick Specialties website. Answer in your own words, in any order, over as many sittings as you like. Everything you type saves to Nicholas by itself a few seconds after you stop typing: watch for the green Saved line. Nothing to send.",
+ "lede": "For the new Moby Dick Specialties website. Most of these can be answered \"Same as Upper Deck\". Answer in your own words, in any order, over as many sittings as you like. When you finish a part, watch for the green Saved line. If the page says saving is not switched on, tap Text it instead and your answers come to Nicholas as a text.",
  "sections": [
   {
    "id": "all",
    "title": "Moby Dick Specialties",
-   "lead": "12 questions. The research is written under each one.",
+   "lead": "10 questions. Under each one is what Nicholas found on the old website and in the catalog.",
    "qs": [
     {
      "id": "m1",
-     "t": "The Moby Dick minimum is $250 (settled: every old-site page says so; the $75 was only the printed '22–'23 book). Counted before or after quantity discounts?",
+     "t": "The Moby Dick minimum is $250. Do you count it at the regular price, or after the quantity discount?",
+     "w": "Every page of the old Moby Dick website says $250 (the $75 was only in the printed 2022–23 book). Example: 18 of one item can be $270 at the regular price but $240 after its quantity discount.",
      "type": "choice",
      "opts": [
-      "$250 at list price (before breaks)",
-      "$250 after quantity discounts"
+      "Same as my Upper Deck answer",
+      "The regular price, before any quantity discount",
+      "After the quantity discount"
      ],
-     "note": "Keep a $75 showroom minimum for showroom customers? Yes / no"
+     "note": "Anything to add (optional)"
+    },
+    {
+     "id": "m13",
+     "t": "The $75 showroom minimum for Moby Dick: keep it?",
+     "w": "A separate $75 minimum for customers who buy in the showroom, on top of the $250 for web orders.",
+     "type": "choice",
+     "opts": [
+      "Same as my Upper Deck answer",
+      "Yes, keep the $75 showroom minimum",
+      "No, drop it"
+     ],
+     "note": "Anything to add (optional)"
     },
     {
      "id": "m2",
-     "t": "Four items whose base price went up (bases verified on the old site). What is their 12+ price?",
-     "w": "The site's 12+ price for these is below the old one. They are newer than the printed book, so only you have the number. (No prices on this page.)",
+     "t": "Four MR items: the single price went up, but the 12+ price did not. What should the 12+ price be?",
+     "w": "On the old website the single price of these four was raised. Their 12+ price on the new website is still the old one, so it looks too low. These are newer than the printed book, so only you have the number. The prices are not printed here; the old website shows them if you want to look.",
      "type": "table",
      "cols": [
       "Item",
-      "Correct 12+ price"
+      "The right 12+ price"
      ],
      "rows": [
       [
@@ -45,98 +59,93 @@
     },
     {
      "id": "m2b",
-     "t": "MA-1051: the site shows a 4+ price one cent under the base price, then an 8+ price. Is the 4+ price real, or delete it?",
-     "type": "text"
+     "t": "MA-1051: the website shows a 4+ price that is one cent under the single price",
+     "w": "It came over from the old website that way. A one-cent discount looks like a typo. There is also an 8+ price, which looks fine.",
+     "type": "choice",
+     "opts": [
+      "Delete the 4+ price, keep the single and 8+ prices (Nicholas recommends)",
+      "It's real, keep it",
+      "Write the right prices below"
+     ],
+     "note": "The right prices, if you want to write them"
     },
     {
      "id": "m3",
-     "t": "41 Moby Dick items (the MR resin figures) had their quantity tables cleared on 8/19. None are in the printed book.",
+     "t": "The 41 MR resin figures: one price only, or quantity discounts?",
+     "w": "Right now the new website shows ONE price for each of the 41 MR resin figures, with no quantity discount. The old website had quantity prices for them; they were taken off the new website in August while the prices were being checked. None of the 41 are in the printed book.",
      "type": "choice",
      "opts": [
-      "Base price only for all 41",
-      "Put the July tiers back for all 41",
-      "Send me the list, I'll mark each line"
-     ]
+      "Use the same quantity prices the old website had",
+      "One price only, no quantity discount",
+      "Send me the list and I'll mark each one"
+     ],
+     "note": "Anything to add (optional)"
     },
     {
      "id": "m4",
-     "t": "Paying: the old Moby Dick site uses the same words as Upper Deck. Same answers as Upper Deck question 2?",
-     "type": "text",
-     "ph": "SAME, or write the difference"
-    },
-    {
-     "id": "m5",
-     "t": "Showroom pickup: the cart asks \"How will you get this order?\" AND Shopify's checkout has its own Pickup switch. One path only.",
+     "t": "Paying for a Moby Dick web order: same as your Upper Deck answer?",
+     "w": "The old Moby Dick website uses the same paying words as Upper Deck (check, Visa, MasterCard, plus postage). On the Upper Deck page you answered when the card is charged, first orders, checks, and terms.",
      "type": "choice",
      "opts": [
-      "Our cart question",
-      "Shopify's pickup switch"
-     ]
+      "Same as Upper Deck",
+      "Different (write it below)"
+     ],
+     "note": "If different, write it here"
     },
     {
-     "id": "m6",
-     "t": "Stoneware (8 items) and Butlers (4 items) exist on the old site but every one is out of stock with no ETA. They were taken out of the new menu on 9/4.",
+     "id": "m15",
+     "t": "Items with a minimum (Min. 4 and so on): same rule as your Upper Deck answer?",
+     "w": "On the Upper Deck page you chose whether each item keeps its old-website rule, or one rule for all. Moby Dick items have minimums too.",
      "type": "choice",
      "opts": [
-      "Restocking — put them back when stock lands",
-      "Dropped for good"
-     ]
-    },
-    {
-     "id": "m7",
-     "t": "Showroom appointments: both old sites already use the same Calendly page (udlshowroom/showroom-appt). Keep it shared?",
-     "type": "choice",
-     "opts": [
-      "Keep it shared",
-      "Moby Dick needs its own"
-     ]
-    },
-    {
-     "id": "m8",
-     "t": "The catalog: the old site still offers only the '22–'23 book, and its specials say \"GOOD UNTIL December 31, 2023\". No newer full catalog was found anywhere.",
-     "type": "multi",
-     "rows": [
-      "Keep the '22–'23 book on the new site until the next one is printed?",
-      "When is the next Moby Dick catalog due?",
-      "The page-5 specials: expired, or still honored?",
-      "OK for Nicholas to ask Real3D to swap the public flipbook to the clean no-price edition?"
-     ]
-    },
-    {
-     "id": "m9",
-     "t": "Claims: the old Moby Dick claim form has the same rules as Upper Deck's (brass tarnish excluded, glass buoys final sale, 10 days from the ship date, 15% keep-it, next-order credit). Same answer as Upper Deck question 8?",
-     "type": "text",
-     "ph": "SAME, or the difference"
+      "Same as Upper Deck",
+      "Different (write it below)"
+     ],
+     "note": "If different, write it here"
     },
     {
      "id": "m10",
-     "t": "Who runs the Moby Dick web orders",
-     "w": "Found: orders@mobydickspecialties.com is on every old-site page, fax 508-994-9830. (The old Why Register page still prints the dead 1-800 number and a misspelled email — ignore those.)",
+     "t": "Who handles the Moby Dick web orders?",
+     "w": "The old Moby Dick website prints its own orders@ inbox on every page.",
      "type": "multi",
      "rows": [
-      "Same people as Upper Deck? (SAME, or roles/initials)",
-      "orders@mobydickspecialties.com is the inbox — correct?",
-      "Who keys Moby Dick web orders into Acctivate / backup"
+      "Same people as your Upper Deck answer? (SAME, or initials)",
+      "Should the new website send orders to the same orders@ inbox as the old Moby Dick website, or another?",
+      "Who types Moby Dick web orders into the office system, and who is the backup?",
+      "Launch morning: same person as Upper Deck turns ordering off on the old Moby Dick website and keeps the list of any orders that still come in there? (SAME, or initials)"
      ]
     },
     {
-     "id": "m11",
-     "t": "50 items the old site no longer sells but the new site still lists — leave them, or archive?",
-     "w": "Nicholas said leave them on 9/4. Confirm, or change it.",
-     "type": "choice",
-     "opts": [
-      "Leave them",
-      "Archive them"
+     "id": "m14",
+     "t": "Three items the old website stopped selling but the new website still sells. Are they in the warehouse?",
+     "w": "MB-1162, MR-153 and MS-513. If they are really on the shelf to ship, the new website keeps selling them. If not, they should show sold out.",
+     "type": "table",
+     "cols": [
+      "Item",
+      "IN STOCK or SOLD OUT"
+     ],
+     "rows": [
+      [
+       "MB-1162"
+      ],
+      [
+       "MR-153"
+      ],
+      [
+       "MS-513"
+      ]
      ]
     },
     {
      "id": "m12",
-     "t": "Prices for everyone — same ruling as Upper Deck question 10?",
+     "t": "Hiding prices from people who aren't customers: same as your Upper Deck answer?",
+     "w": "On the Upper Deck page you chose between \"good enough, same as today, open on time\" and \"hide every price, even if the launch moves back\".",
      "type": "choice",
      "opts": [
       "Same as Upper Deck",
-      "Different (write it)"
-     ]
+      "Different (write it below)"
+     ],
+     "note": "If different, write it here"
     }
    ]
   }

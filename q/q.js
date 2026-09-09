@@ -78,15 +78,24 @@
     var text = compile(id) || (everSent(id) ? "(cleared)" : "");
     if (!text) return;
     if (!force && lastSent[id] === text) return;
-    if (!CFG.url || !CFG.key) { status(id, "bad", "Saving is not switched on yet. Use Text it instead."); return; }
+    if (!CFG.gform && !(CFG.url && CFG.key)) { status(id, "bad", "Saving is not switched on yet. Use Text it instead."); return; }
     if (inflight[id] && !urgent) { inflight[id] = "again"; return; }
     var myRev = rev[id] || 0; if (!urgent) inflight[id] = true;
     status(id, "busy", "Saving…");
-    fetch(CFG.url + "/rest/v1/answers", { method: "POST", keepalive: true, headers: { "Content-Type": "application/json", "apikey": CFG.key, "Authorization": "Bearer " + CFG.key, "Prefer": "return=minimal" },
-      body: JSON.stringify({ form: slug, section: id, who: (whoEl.value || F.who), device: device, rev: myRev, answers: sectionAnswers(id), text: text }) })
-      .then(function (r) {
-        if (!r.ok) throw new Error(r.status);
-        // the server now holds THIS text; record it before deciding whether a newer revision must follow
+    var row = { form: slug, section: id, who: (whoEl.value || F.who), device: device, rev: myRev, at: new Date().toISOString(), answers: sectionAnswers(id), text: text };
+    var sends = [];
+    if (CFG.gform) {
+      // Google Forms answers with an opaque response (no-cors): a network error is the only failure we can see, and that is what we handle
+      var fd = new FormData(); fd.append(CFG.gentry, JSON.stringify(row));
+      sends.push(fetch(CFG.gform, { method: "POST", mode: "no-cors", keepalive: true, body: fd }));
+    }
+    if (CFG.url && CFG.key) {
+      sends.push(fetch(CFG.url + "/rest/v1/answers", { method: "POST", keepalive: true, headers: { "Content-Type": "application/json", "apikey": CFG.key, "Authorization": "Bearer " + CFG.key, "Prefer": "return=minimal" }, body: JSON.stringify({ form: slug, section: id, who: row.who, device: device, rev: myRev, answers: row.answers, text: text }) })
+        .then(function (r) { if (!r.ok) throw new Error(r.status); }));
+    }
+    Promise.all(sends)
+      .then(function () {
+        // the bucket now holds THIS text; record it before deciding whether a newer revision must follow
         try { localStorage.setItem(KEY + "-sent-" + id, text); } catch (e) {}
         var stale = (rev[id] || 0) !== myRev;
         if (!stale) lastSent[id] = text;

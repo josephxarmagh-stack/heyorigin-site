@@ -2,42 +2,55 @@
  "slug": "upper-deck",
  "title": "Upper Deck: launch questions",
  "who": "Mom",
- "lede": "For the new Upper Deck website. Answer in your own words, in any order, over as many sittings as you like. Everything you type saves to Nicholas by itself a few seconds after you stop typing: watch for the green Saved line. Nothing to send.",
+ "lede": "For the new Upper Deck website. Answer in your own words, in any order, over as many sittings as you like. When you finish a part, watch for the green Saved line. If the page says saving is not switched on, tap Text it instead and your answers come to Nicholas as a text.",
  "sections": [
   {
    "id": "all",
    "title": "Upper Deck Ltd",
-   "lead": "13 questions. The research is written under each one.",
+   "lead": "14 questions. Under each one is what Nicholas found on the old website and in the catalogs.",
    "qs": [
     {
      "id": "u1",
-     "t": "The $250 minimum: counted before or after quantity discounts?",
-     "w": "Settled by research: both old sites say \"ONLY $250 MINIMUM PURCHASE\" on every page, and the old cart shows a separate $75 showroom minimum for showroom customers. What no page says is whether the $250 is counted at list price or after the quantity breaks (example: 18 of one item can be over $250 at list price and under $250 after its quantity break).",
+     "t": "The $250 minimum: do you count it at the regular price, or after the quantity discount?",
+     "w": "Both old websites say \"$250 minimum\" on every page. Example: 18 of one item can be $270 at the regular price but $240 after its quantity discount. Which one counts toward the $250?",
      "type": "choice",
      "opts": [
-      "$250 at list price (before breaks)",
-      "$250 after quantity discounts"
+      "The regular price, before any quantity discount",
+      "After the quantity discount"
      ],
-     "note": "Keep a $75 showroom minimum on the new site too? Yes / no"
+     "note": "Anything to add (optional)"
+    },
+    {
+     "id": "u15",
+     "t": "The $75 showroom minimum: keep it on the new website?",
+     "w": "The old website has a separate $75 minimum for customers who buy in the showroom, on top of the $250 minimum for web orders.",
+     "type": "choice",
+     "opts": [
+      "Yes, keep the $75 showroom minimum",
+      "No, drop it"
+     ],
+     "note": "Anything to add (optional)"
     },
     {
      "id": "u2",
-     "t": "Paying: the old site says \"check, Visa, or MasterCard for full amount, plus postage with order unless other financial arrangements have been made.\" Three things it doesn't say:",
+     "t": "Paying for a web order",
+     "w": "The old website says: \"check, Visa, or MasterCard for full amount, plus postage with order unless other financial arrangements have been made.\" The new website is built to charge the card once, when the order ships, for the goods plus the real freight.",
      "type": "multi",
      "rows": [
-      "Is the card charged when the order is PLACED, or once when it SHIPS (merchandise plus actual freight)?",
-      "A new customer with no card on file: what happens on their first order?",
-      "Checks: still accepted? Any customer on net terms?"
+      "Keep charging the card when the order SHIPS (goods plus the real freight)? Or charge it when the order is PLACED?",
+      "A brand-new customer with no card on file places a first order. What should happen?",
+      "Do you still take checks?",
+      "Are there customers who pay on terms (net 30) instead of a card? Which ones?"
      ]
     },
     {
      "id": "u3",
-     "t": "Five items show a quantity price HIGHER than their single price. Which number is right?",
-     "w": "The 2026 garden catalog settles one: X2060 prints its 4+ price equal to the single price, so the site's higher 4+ price is wrong. The other four are not in the printed books. (Prices are not printed on this page: check them on the site while logged in, or on the sheet Nicholas shows you.)",
+     "t": "Five items: the quantity price is HIGHER than the single price. Which one is right?",
+     "w": "A quantity price should be lower, not higher. These five came over from the old website that way. For each line type SINGLE if the single price is right, QUANTITY if the quantity price is right, or type the right prices. The numbers are not printed here; they are the same as on the old website today if you want to look.",
      "type": "table",
      "cols": [
       "Item",
-      "Your ruling: single price stands · quantity price stands · or write the right numbers"
+      "Your answer: SINGLE, QUANTITY, or the right prices"
      ],
      "rows": [
       [
@@ -53,19 +66,31 @@
        "UT906"
       ],
       [
-       "X2060 (catalog: 4+ = single price)"
+       "X2060 (the 2026 garden catalog prints the 4+ price the same as the single price, so the single price is probably right)"
       ]
      ]
     },
     {
+     "id": "u4a",
+     "t": "23 items: one price only, or quantity discounts?",
+     "w": "Right now the new website shows ONE price for each of these 23 items, with no quantity discount. The old website had quantity discounts for them; they were taken off the new website in August while the prices were being checked. Five of the 23 are printed in the 2026 catalogs with quantity prices; the other 18 are not in any book.",
+     "type": "choice",
+     "opts": [
+      "Use the same quantity prices the old website had",
+      "One price only, no quantity discount",
+      "I'll go item by item in the next question"
+     ],
+     "note": "Anything to add (optional)"
+    },
+    {
      "id": "u4",
-     "t": "23 items had their quantity tables cleared on 8/19. Base price only, or bring tiers back?",
-     "w": "Five of them are printed in the 2026 books (page noted), the other 18 are not. Write B = base price only, T = the tiers from the July import, C = the tiers the catalog prints, or write the right tiers yourself. (No prices on this page; Nicholas has the July and catalog numbers on his sheet.)",
+     "t": "Item by item (only if you picked \"item by item\" above)",
+     "w": "For each line type OLD for the old website's quantity prices, BOOK for the catalog's quantity prices (only the five lines that name a page), ONE for one price only, or type the prices yourself.",
      "type": "table",
      "cols": [
       "Item",
-      "Printed in a 2026 book?",
-      "Your ruling (B / T / C / numbers)"
+      "In a 2026 catalog?",
+      "Your answer: OLD, BOOK, ONE, or prices"
      ],
      "rows": [
       [
@@ -74,11 +99,11 @@
       ],
       [
        "UW2616",
-       "Master p.74"
+       "yes, master catalog p. 74"
       ],
       [
        "UX4016",
-       "Garden p.89"
+       "yes, garden catalog p. 89"
       ],
       [
        "UX4136",
@@ -90,11 +115,11 @@
       ],
       [
        "UX4428",
-       "Garden p.14"
+       "yes, garden catalog p. 14"
       ],
       [
        "UX4454",
-       "Master p.13"
+       "yes, master catalog p. 13"
       ],
       [
        "UX9179",
@@ -102,7 +127,7 @@
       ],
       [
        "UX9260",
-       "Garden p.30"
+       "yes, garden catalog p. 30"
       ],
       [
        "X1366",
@@ -164,98 +189,92 @@
     },
     {
      "id": "u5",
-     "t": "\"Min. N\" items: the old site sets the rule PER ITEM.",
-     "w": "Research found the old site's own settings: Cardinal (Min. 4) must be bought in twos above 4; X2060 (Min. 4) can be any amount above 4. On 9/8 Nicholas set the new site to copy each item's old rule exactly (34 items changed). Confirm, or pick another rule.",
+     "t": "Items with a minimum (Min. 4 and so on): after the minimum, any number, or only in steps?",
+     "w": "On the old website this is set item by item. Example: the Cardinal is Min. 4 and then goes in twos (4, 6, 8). X2060 is Min. 4 and then any number (4, 5, 6). The new website now copies each item's old-website rule exactly (34 items were set that way on September 8).",
      "type": "choice",
      "opts": [
-      "Keep it: each item's old-site rule, exactly (done 9/8)",
-      "One rule for all: at least N, then any amount",
-      "One rule for all: multiples of N"
-     ]
-    },
-    {
-     "id": "u6",
-     "t": "The catalog specials UDLM26A ($250 cast iron) and UDLM26B ($600 mixed): 15% off the first price, \"cannot be combined\", no end date printed.",
-     "type": "multi",
-     "rows": [
-      "Still honored for 2026 web orders?",
-      "Do they stack with quantity prices, or 15% off the first price only?",
-      "How does a customer ask for one on a web order: note on the order, or call?"
-     ]
-    },
-    {
-     "id": "u7",
-     "t": "Tradeshows: research found four booth numbers on the show organizers' sites. Two still open.",
-     "w": "Found: Surf Expo Sep 16–18 booth 2268 · Smoky Mountain Nov 4–7 booth 1723 · Ocean City Nov 15–17 booth 120 · Grand Strand Dec 6–9 booth 1010 (all listed as Moby Dick Specialties / Upper Deck Ltd).",
-     "type": "multi",
-     "rows": [
-      "Are those four right, and are you going to all four?",
-      "Surf Expo Jan 6–8, 2027: going? booth?",
-      "Philadelphia Gift Show Jan 31–Feb 2, 2027: going? booth? (last year's was 1213)"
-     ]
-    },
-    {
-     "id": "u8",
-     "t": "Claims: the old claim form's rules, found by research. Confirm they still hold.",
-     "w": "Old claim form: brass tarnish is not a claim · glass buoys are final sale (cosmetic bubbles, scratches, colour variation excluded) · file within 10 days of the SHIPPED or pickup date · option to keep damaged goods for 15% off the invoiced price · credit goes to the next order, no card or freight refund · packaging and photos required. Returns for dissatisfaction: notify within 10 days, return within 30, 15% restocking fee.",
-     "type": "choice",
-     "opts": [
-      "All still true — keep exactly that",
-      "Something changed (write it below)"
-     ]
+      "Keep it: each item works the way it did on the old website (Nicholas recommends)",
+      "Every item: at least the minimum, then any number",
+      "Every item: only in multiples of the minimum (4, 8, 12)"
+     ],
+     "note": "Anything to add (optional)"
     },
     {
      "id": "u9",
-     "t": "Who runs the web orders from launch day (roles or initials, primary and backup)",
-     "w": "Research found: the old site publishes orders@upperdeckltd.com for orders, customerservice@upperdeckltd.com for claims, and customer-service phone 508-992-3827. Acctivate does sell a Shopify integration that downloads orders by itself (setup and price by quote).",
+     "t": "Who handles the web orders once the new website is live? (initials are fine, plus a backup)",
+     "w": "The old website sends orders to its orders@ inbox and claims to its customer-service inbox.",
      "type": "multi",
      "rows": [
-      "Who receives the order email (role or initials), and is orders@upperdeckltd.com the right inbox?",
-      "Who keys web orders into Acctivate / backup",
-      "Did the OLD website drop orders into Acctivate by itself, or did someone key them? Should the new one connect (the tech guy is setting Acctivate up)?",
-      "Who updates stock on the site when the warehouse runs out",
-      "Who handles payment and freight billing",
-      "Who approves new applications and reviews claims"
+      "Which inbox should the new website send orders to? (the same orders@ inbox as the old website, or another)",
+      "Who reads that inbox and types web orders into the office system? Who is the backup?",
+      "When the warehouse runs out of an item, who marks it out of stock on the website?",
+      "Who charges the card and adds the freight?",
+      "Who approves new customer applications, and who reviews claims?"
+     ]
+    },
+    {
+     "id": "u17",
+     "t": "Web orders and the office system",
+     "w": "The tech guy is setting up the office system. Its maker sells an add-on that pulls web orders into it by itself (price by quote).",
+     "type": "multi",
+     "rows": [
+      "On the OLD website, did orders go into the office system by themselves, or did someone type them in?",
+      "Should the new website feed orders into the office system by itself, or should someone type them in?"
+     ]
+    },
+    {
+     "id": "u18",
+     "t": "Launch morning: the old website stops taking orders",
+     "w": "On launch day (Monday September 14, 8 AM) the old website stops taking orders and the new one takes over. For the first week a few orders may still land on the old website.",
+     "type": "multi",
+     "rows": [
+      "Who turns ordering off on the old website that morning and tells the office? (you, or initials)",
+      "Who keeps the list of any orders that still come in on the old website that first week, so nothing ships twice?"
      ]
     },
     {
      "id": "u10",
-     "t": "Prices for everyone? The one policy question",
-     "w": "The old site already shows every wholesale price to anyone who looks (research confirmed the public price feed). The new site hides them behind login, but once the password comes off, Shopify's built-in product data can still show BASE prices to a script (never the quantity tiers, never the catalogs).",
+     "t": "Hiding prices from people who aren't customers: good enough, or hide everything?",
+     "w": "Today, on the old website, anyone can see your wholesale prices without logging in. The new website makes people log in first. But a person with computer know-how could still dig out the single prices (never the quantity prices, never the catalogs). That is no worse than today. Hiding every price completely means rebuilding part of the website, and the launch moves back.",
      "type": "choice",
      "opts": [
-      "Accept it — same as today, launch on time (Nicholas recommends)",
-      "Hide everything — a rebuild on Shopify's B2B catalogs, launch moves"
-     ]
-    },
-    {
-     "id": "u11",
-     "t": "Product facts — research settled most of these, confirm the rest",
-     "w": "Found: P465 Bonnet Girls and A140 Nevr-Dull are sold by the DOZEN (\"Quantity 1 = 12\"); the catalog prints P465 \"16 dz. cl.\" = 192 pieces per case and A140 \"6 dz. cl.\" = 72 pieces per case. The new site's labels were fixed 9/8 to match. Cellphone Holders never existed as a category on the old site.",
-     "type": "multi",
-     "rows": [
-      "P465 and A140: unit = one dozen, cases = 16 dozen and 6 dozen — correct?",
-      "UA1489 Victorian Puzzle Game (Min. 3): size / material / what one unit holds",
-      "UX9321 Teacup Stake (Pkg. 2): two colours in the photo — assorted, or does the buyer choose?",
-      "Cellphone Holders stays retired — yes?"
-     ]
+      "Good enough: same as today, open on time (Nicholas recommends)",
+      "Hide every price, even if the launch moves back"
+     ],
+     "note": "Anything to add (optional)"
     },
     {
      "id": "u12",
-     "t": "Two things the test order showed",
+     "t": "The office check before a web order is filled",
+     "w": "Nicholas suggests this rule. Before the office fills a web order, someone checks two things: (1) the customer is an approved wholesale account, and (2) the order shows wholesale prices (the order will say \"Wholesale Pricing Discount\" on it). If either is missing, call the buyer first and enter the order by hand.",
      "type": "multi",
      "rows": [
-      "Checkout shows a delivery estimate \"Mon Sep 14 – Wed Sep 16\" under the $0 freight line (Shopify adds it). Turn it off?",
-      "Checkout has its own Ship / Pickup switch on top of our cart question. Keep Shopify's pickup switch, or only our question?",
-      "THE OFFICE RULE: process a web order only if the customer is tagged wholesale AND the order shows \"Source: Wholesale Pricing Discount\"; anything else, call the buyer and re-key. Agreed? Who checks it (role or initials)?"
+      "Agreed? (yes, or what to change)",
+      "Who does that check, and who is the backup? (initials)"
      ]
     },
     {
+     "id": "u14",
+     "t": "Showroom pickup: ask the customer once, not twice (this answer is used for Moby Dick too)",
+     "w": "Today the customer is asked twice. In the cart: \"How will you get this order?\" Then again at checkout, a Ship / Pickup switch the website adds by itself. Keep only one.",
+     "type": "choice",
+     "opts": [
+      "Keep our cart question, remove the checkout switch",
+      "Keep the checkout switch, remove our cart question"
+     ],
+     "note": "Anything to add (optional)"
+    },
+    {
      "id": "u13",
-     "t": "Hours: the old site contradicts itself. Which is true?",
-     "w": "Old site footer: Mon–Fri 8 AM–3 PM. Old contact page: Mon–Thu 8–4, showroom by appointment 8:15–2:15. New site: Mon–Thu 8–3.",
-     "type": "text",
-     "ph": "Office hours / showroom hours / closed Friday?"
+     "t": "Hours: the old website says two different things. Which is true?",
+     "w": "Old website footer: Mon–Fri 8 AM–3 PM. Old contact page: Mon–Thu 8–4, showroom by appointment 8:15–2:15. New website today: Mon–Thu 8–3. The old Moby Dick website says the same two things.",
+     "type": "multi",
+     "rows": [
+      "Office hours (days and times)",
+      "Showroom hours, or by appointment only?",
+      "Are you open on Fridays?",
+      "Same hours for Moby Dick? (SAME, or the difference)"
+     ]
     }
    ]
   }

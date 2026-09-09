@@ -2,7 +2,7 @@
  "slug": "family",
  "title": "The family picture",
  "who": "Mom",
- "lede": "What the family owns, what it's worth, and what's owed on it, so Nicholas can build one true net worth number. Rough numbers and ranges are fine, in any order, over as many sittings as you like. Never type an account number, password, or Social Security number here: say \"in person\" and tell him. Everything you type saves to Nicholas by itself a few seconds after you stop typing.",
+ "lede": "What the family owns, what it's worth, and what's owed on it, so Nicholas can build one true net worth number. Rough numbers and ranges are fine, in any order, over as many sittings as you like. Never type an account number, password, or Social Security number here: say \"in person\" and tell him. When you finish a part, watch for the green Saved line. If the page says saving is not switched on, tap Text it instead and your answers come to Nicholas as a text.",
  "sections": [
   {
    "id": "props",
@@ -14,10 +14,10 @@
      "t": "The warehouse (Fairhaven)",
      "type": "multi",
      "rows": [
-      "Who owns it on paper (trust, company, person)?",
-      "Mortgage: bank, balance owed today, monthly payment",
+      "Who owns it on paper (a trust, a company, a person)?",
+      "Mortgage: which bank, what's owed today, and the monthly payment",
       "What do you think it would sell for today?",
-      "Rent it earns, if any (does the business pay the trust?)"
+      "Does the business pay rent for it? To whom, and how much a year?"
      ]
     },
     {
@@ -66,7 +66,6 @@
      "t": "The New Bedford retail building",
      "type": "multi",
      "rows": [
-      "Who owns the LLC that holds it, and what percent each?",
       "Mortgage: bank, balance owed today, monthly payment",
       "What would it sell for today?",
       "Rent it earns per year"
@@ -84,9 +83,9 @@
     },
     {
      "id": "p8",
-     "t": "Any other property, land, or rental we haven't listed",
+     "t": "Any other property, land, or rental we haven't listed, including the house that is rented out short-term",
      "type": "text",
-     "ph": "Which one (a nickname is fine), who owns it, what's owed, what it's worth"
+     "ph": "A nickname is fine: who owns it, what's owed, what it would sell for, what it earns a year"
     }
    ]
   },
@@ -103,15 +102,13 @@
     },
     {
      "id": "b2",
-     "t": "Warehouse inventory at cost, today",
-     "type": "text",
-     "ph": "The number from the office system, or your best estimate"
-    },
-    {
-     "id": "b3",
-     "t": "Inventory in the two retail shops, at cost",
-     "type": "text",
-     "ph": "Moby Dick Nauticals / The Bedford Merchant"
+     "t": "Inventory at cost, today",
+     "type": "multi",
+     "rows": [
+      "In the warehouse (the number from the office system, or your best estimate)",
+      "In the Moby Dick Nauticals shop",
+      "In The Bedford Merchant shop"
+     ]
     },
     {
      "id": "b4",
@@ -132,9 +129,10 @@
     {
      "id": "b6",
      "t": "What the businesses make",
+     "w": "The number off last year's tax return is fine, or a rough guess.",
      "type": "multi",
      "rows": [
-      "Last year's profit for the wholesale side (after paying you and Dad)",
+      "Last year's profit for the wholesale side, after your and Dad's pay",
       "Last year's profit for each retail shop",
       "What you and Dad take out per year, roughly"
      ]
@@ -144,6 +142,12 @@
      "t": "Equipment, trucks, vehicles the businesses own",
      "type": "text",
      "ph": "What, and rough value"
+    },
+    {
+     "id": "b8",
+     "t": "The businesses' accountant, so Nicholas can ask for any numbers you don't have handy",
+     "type": "text",
+     "ph": "Name, and an email or phone number"
     }
    ]
   },
@@ -164,7 +168,7 @@
     },
     {
      "id": "t3",
-     "t": "Any other trust, LLC, or company in the family: name, what it holds, who owns it",
+     "t": "Any other trust, LLC, or company in the family, including one that is closed or being closed: name, what it holds, who owns it, and if closed, when",
      "type": "text"
     }
    ]
@@ -176,15 +180,12 @@
    "qs": [
     {
      "id": "c1",
-     "t": "Personal checking and savings, total today",
-     "type": "text",
-     "ph": "Which banks, rough total"
-    },
-    {
-     "id": "c2",
-     "t": "Investments and retirement, total today",
-     "type": "text",
-     "ph": "Brokerage, IRA, 401k, pension: where, rough total"
+     "t": "Cash and investments, total today",
+     "type": "multi",
+     "rows": [
+      "Checking and savings: which banks, rough total",
+      "Investments and retirement (brokerage, IRA, 401k, pension): where, rough total"
+     ]
     },
     {
      "id": "c3",
@@ -221,7 +222,7 @@
    "lead": "One question.",
    "qs": [
     {
-     "id": "u1",
+     "id": "x1",
      "t": "Anything you own or owe that isn't on this page",
      "type": "text"
     }
