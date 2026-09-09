@@ -247,7 +247,7 @@
      "rows": [
       "Checkout shows a delivery estimate \"Mon Sep 14 – Wed Sep 16\" under the $0 freight line (Shopify adds it). Turn it off?",
       "Checkout has its own Ship / Pickup switch on top of our cart question. Keep Shopify's pickup switch, or only our question?",
-      "THE OFFICE RULE: process a web order only if the customer is tagged wholesale AND the order shows \"Source: Wholesale Pricing Discount\"; anything else, call the buyer and re-key. Agreed? Who checks it (name)?"
+      "THE OFFICE RULE: process a web order only if the customer is tagged wholesale AND the order shows \"Source: Wholesale Pricing Discount\"; anything else, call the buyer and re-key. Agreed? Who checks it (role or initials)?"
      ]
     },
     {

@@ -72,24 +72,30 @@
   // response belongs to the revision that is still current. An emptied section is sent as an explicit "(cleared)".
   var timers = {}, lastSent = {}, rev = {}, inflight = {};
   function status(id, cls, msg) { var el = document.getElementById("saved-" + id); if (el) { el.className = "saved" + (cls ? " " + cls : ""); el.textContent = msg + (storageBroken ? " · This phone cannot keep a copy, so stay on this page until it says Saved." : ""); } }
-  function push(id, force) {
-    var text = compile(id) || (lastSent[id] ? "(cleared)" : "");
+  function everSent(id) { if (lastSent[id]) return true; try { return !!localStorage.getItem(KEY + "-sent-" + id); } catch (e) { return false; } }
+  function push(id, force, urgent) {
+    // "(cleared)" is sent whenever a section that was ever saved is now empty, including a clear made during a save or before a reopen.
+    var text = compile(id) || (everSent(id) ? "(cleared)" : "");
     if (!text) return;
     if (!force && lastSent[id] === text) return;
     if (!CFG.url || !CFG.key) { status(id, "bad", "Saving is not switched on yet. Use Text it instead."); return; }
-    if (inflight[id]) { inflight[id] = "again"; return; }
-    var myRev = rev[id] || 0; inflight[id] = true;
+    if (inflight[id] && !urgent) { inflight[id] = "again"; return; }
+    var myRev = rev[id] || 0; if (!urgent) inflight[id] = true;
     status(id, "busy", "Saving…");
     fetch(CFG.url + "/rest/v1/answers", { method: "POST", keepalive: true, headers: { "Content-Type": "application/json", "apikey": CFG.key, "Authorization": "Bearer " + CFG.key, "Prefer": "return=minimal" },
-      body: JSON.stringify({ form: slug, section: id, who: (whoEl.value || F.who), device: device, answers: sectionAnswers(id), text: text }) })
+      body: JSON.stringify({ form: slug, section: id, who: (whoEl.value || F.who), device: device, rev: myRev, answers: sectionAnswers(id), text: text }) })
       .then(function (r) {
         if (!r.ok) throw new Error(r.status);
+        // the server now holds THIS text; record it before deciding whether a newer revision must follow
+        try { localStorage.setItem(KEY + "-sent-" + id, text); } catch (e) {}
+        var stale = (rev[id] || 0) !== myRev;
+        if (!stale) lastSent[id] = text;
+        if (urgent) return;
         var again = inflight[id] === "again"; inflight[id] = false;
-        if ((rev[id] || 0) !== myRev || again) { push(id, true); return; }
-        lastSent[id] = text; try { localStorage.setItem(KEY + "-sent-" + id, text); } catch (e) {}
+        if (stale || again) { lastSent[id] = text; push(id, true); return; }
         status(id, "", "Saved to Nicholas ✓ " + new Date().toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" }));
       })
-      .catch(function () { inflight[id] = false; status(id, "bad", "Not saved yet (no signal?). It will retry, or tap Save now."); setTimeout(function () { push(id); }, 30000); });
+      .catch(function () { if (!urgent) inflight[id] = false; status(id, "bad", "Not saved yet (no signal?). It will retry, or tap Save now."); setTimeout(function () { push(id); }, 30000); });
   }
   function schedule(id) { rev[id] = (rev[id] || 0) + 1; clearTimeout(timers[id]); status(id, "busy", "Typing… saves in a moment"); timers[id] = setTimeout(function () { push(id); }, 6000); }
   function sectionOf(el) { var s = el.closest("section.sec"); return s ? s.id.replace("sec-", "") : null; }
@@ -100,9 +106,11 @@
     if (b.dataset.push) { clearTimeout(timers[b.dataset.push]); push(b.dataset.push, true); }
     if (b.dataset.send) { var t = compile(b.dataset.send); if (!t) { alert("Nothing answered in this section yet."); return; } location.href = "sms:" + (CFG.sms || "") + "&body=" + encodeURIComponent(t); }
   });
-  window.addEventListener("pagehide", function () { Object.keys(timers).forEach(function (id) { clearTimeout(timers[id]); push(id); }); });
+  // leaving the page: fire a keepalive save of every section with unsaved edits, even if an earlier save is still in flight
+  window.addEventListener("pagehide", function () { Q.forEach(function (sec) { var id = sec.id; clearTimeout(timers[id]); var t = compile(id) || (everSent(id) ? "(cleared)" : ""); if (t && lastSent[id] !== t) push(id, true, true); }); });
   fetch("form.json").then(function (r) { return r.json(); }).then(function (f) {
     F = f; Q = f.sections; render();
-    Q.forEach(function (sec) { var t = compile(sec.id); if (!t) return; var sent = null; try { sent = localStorage.getItem(KEY + "-sent-" + sec.id); } catch (e) {} if (sent === t) { lastSent[sec.id] = t; status(sec.id, "", "Saved to Nicholas ✓"); } else push(sec.id, true); });
+    // on open: anything typed but not yet saved goes up; a section saved before and emptied since goes up as "(cleared)"
+    Q.forEach(function (sec) { var t = compile(sec.id); var sent = null; try { sent = localStorage.getItem(KEY + "-sent-" + sec.id); } catch (e) {} if (!t && !sent) return; if (sent === t || (!t && sent === "(cleared)")) { lastSent[sec.id] = sent; status(sec.id, "", "Saved to Nicholas ✓"); } else { lastSent[sec.id] = sent || ""; push(sec.id, true); } });
   });
 })();
