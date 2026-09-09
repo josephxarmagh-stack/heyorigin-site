@@ -10,6 +10,10 @@
   function key(id, sub) { return id + (sub !== undefined ? "-" + sub : ""); }
   function val(k) { return (answers[k] || "").trim(); }
   function shown(q) { if (!q.showIf) return true; return val(key(q.showIf.id)) === q.showIf.equals; }
+  function hasContent(q) {
+    if (q.type === "multi" || q.type === "table") return q.rows.some(function (_, i) { return val(key(q.id, i)); });
+    return !!val(key(q.id)) || !!val(key(q.id, "note"));
+  }
   function isAnswered(q) {
     if (q.type === "table") return q.rows.every(function (_, i) { return val(key(q.id, i)); });
     if (q.type === "multi") return q.rows.some(function (_, i) { return val(key(q.id, i)); });
@@ -55,7 +59,7 @@
     var sec = Q.filter(function (s) { return s.id === secId; })[0];
     var out = [F.title.toUpperCase() + (Q.length > 1 ? " — " + sec.title : ""), "From: " + (whoEl.value || F.who) + " · " + new Date().toLocaleDateString("en-US", { month: "short", day: "numeric" }), ""], n = 0;
     sec.qs.forEach(function (q, i) {
-      if (!shown(q) || !isAnswered(q)) return; n++;
+      if (!shown(q) || !hasContent(q)) return; n++;
       out.push((i + 1) + ". " + q.t);
       if (q.type === "choice") { if (val(key(q.id))) out.push("   → " + val(key(q.id))); if (val(key(q.id, "note"))) out.push("   note: " + val(key(q.id, "note"))); }
       else if (q.type === "multi") q.rows.forEach(function (r, j) { if (val(key(q.id, j))) out.push("   • " + r + " → " + val(key(q.id, j))); });
@@ -83,7 +87,8 @@
   function status(id, cls, msg) { var el = document.getElementById("saved-" + id); if (el) { el.className = "saved" + (cls ? " " + cls : ""); el.textContent = msg + (storageBroken ? " · This phone cannot keep a copy, so stay on this page until it says Saved." : ""); } }
   function everSent(id) { if (lastSent[id] || touched[id]) return true; try { return !!localStorage.getItem(KEY + "-sent-" + id); } catch (e) { return false; } }
   function bumpRev(id) { rev[id] = (rev[id] || 0) + 1; revStore[id] = (revStore[id] || 0) + 1; touched[id] = true; try { localStorage.setItem(KEY + "-rev", JSON.stringify(revStore)); localStorage.setItem(KEY + "-touched", JSON.stringify(touched)); } catch (e) {} }
-  function subId(id) { return device + "-" + id + "-" + (revStore[id] || 0); }   // one id per section revision: a retry of the same revision carries the same id, so the reader can drop duplicates
+  var TAB = Math.random().toString(36).slice(2, 7);
+  function subId(id) { return device + "-" + TAB + "-" + id + "-" + (revStore[id] || 0); }   // same id for retries of one revision in one tab; a second tab never collides   // one id per section revision: a retry of the same revision carries the same id, so the reader can drop duplicates
   function push(id, force, urgent) {
     // "(cleared)" is sent whenever a section that was ever saved is now empty, including a clear made during a save or before a reopen.
     var text = compile(id) || (everSent(id) ? "(cleared)" : "");
@@ -142,6 +147,6 @@
   fetch("form.json").then(function (r) { return r.json(); }).then(function (f) {
     F = f; Q = f.sections; render();
     // on open: anything typed but not yet saved goes up; a section saved before and emptied since goes up as "(cleared)"
-    Q.forEach(function (sec) { var t = compile(sec.id); var sent = null; try { sent = localStorage.getItem(KEY + "-sent-" + sec.id); } catch (e) {} if (!t && !sent) return; if (sent === t || (!t && sent === "(cleared)")) { lastSent[sec.id] = sent; status(sec.id, "", "Sent to Nicholas ✓ · a copy stays on this phone"); } else { lastSent[sec.id] = sent || ""; push(sec.id, true); } });
+    Q.forEach(function (sec) { var t = compile(sec.id); var sent = null; try { sent = localStorage.getItem(KEY + "-sent-" + sec.id); } catch (e) {} if (!t && !sent && !touched[sec.id]) return; if (sent === t || (!t && sent === "(cleared)")) { lastSent[sec.id] = sent; status(sec.id, "", "Sent to Nicholas ✓ · a copy stays on this phone"); } else { lastSent[sec.id] = sent || ""; push(sec.id, true); } });
   });
 })();
