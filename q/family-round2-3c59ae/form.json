@@ -1,0 +1,132 @@
+{
+ "slug": "family-round2-3c59ae",
+ "title": "The family picture: the last questions",
+ "who": "Mom",
+ "lede": "Thank you for the first page: every property, mortgage and rent is now written down. These are the last questions to make the number solid, plus the church. Rough numbers are fine. Never type an account number, password or Social Security number here: tap In person. Each part sends itself to Nicholas a few seconds after you stop typing and keeps a copy on your phone.",
+ "sections": [
+  {
+   "id": "last",
+   "title": "1. The last eight",
+   "lead": "Eight questions. The first three make the net worth number solid.",
+   "chips": [
+    "Not sure",
+    "Ask Dad",
+    "Need records",
+    "In person"
+   ],
+   "qs": [
+    {
+     "id": "f1",
+     "t": "Dana Farms, the rental house: what is it worth today, roughly?",
+     "w": "On the first page it came through as \"#25K\" against a $240K mortgage, so the number got lost.",
+     "type": "text",
+     "ph": "A rough sale price"
+    },
+    {
+     "id": "f2",
+     "t": "The life insurance: which policies, on whom, and are the $590K and $900K amounts loans borrowed against the policies?",
+     "w": "You wrote: one policy 'worth 3.6' with a $590K loan, New York Life worth $1.5M that 'owes $900K', and your Prudential with a $50K loan and $25K owed. These are the two biggest unclear numbers on the whole page.",
+     "type": "multi",
+     "rows": [
+      "The '3.6' policy: whose life, which company, and is the $590K a loan against it?",
+      "The New York Life policy: whose life, and is the $900K a loan against it?",
+      "Your Prudential: is the $25K what's still owed on the $50K loan?"
+     ]
+    },
+    {
+     "id": "f3",
+     "t": "2025 profit: did the wholesale side and the two shops truly clear nothing last year?",
+     "w": "You wrote \"none\" for wholesale profit, shop profit, and what you and Dad take out. If that is a true zero, say so; if the question read wrong, give the rough numbers.",
+     "type": "multi",
+     "rows": [
+      "Wholesale (Upper Deck + Moby Dick) 2025 profit, rough",
+      "The two shops 2025 profit, rough",
+      "What you and Dad lived on in 2025, rough"
+     ]
+    },
+    {
+     "id": "f4",
+     "t": "The old church: who owns 343 County St LLC, and who is the $300K owed to?",
+     "type": "multi",
+     "rows": [
+      "Who owns the LLC (percent each)?",
+      "The $300K: which bank or person, and the monthly payment?"
+     ]
+    },
+    {
+     "id": "f5",
+     "t": "The $262K line of credit on Westport unit 4: what was it for, what rate, and who pays it?",
+     "type": "text",
+     "ph": "Purpose, rate, who pays"
+    },
+    {
+     "id": "f6",
+     "t": "Personal checking and savings: one rough total, and which bank",
+     "type": "text",
+     "ph": "Rough total, bank"
+    },
+    {
+     "id": "f7",
+     "t": "The wills: which lawyer holds them, and is there any trust set up for the estate itself?",
+     "type": "multi",
+     "rows": [
+      "The lawyer (name of the office is enough)",
+      "Any estate trust? Yes / no / not sure"
+     ]
+    },
+    {
+     "id": "f8",
+     "t": "The four businesses: the exact legal name and EIN of each",
+     "w": "One line per business. Needed for any loan, sale or succession paper. If it's easier, say \"in the folder\" and tell Nicholas where.",
+     "type": "multi",
+     "rows": [
+      "Upper Deck Ltd: legal name, EIN",
+      "Moby Dick Specialties: legal name, EIN",
+      "Moby Dick Nauticals: legal name, EIN",
+      "The Bedford Merchant: legal name, EIN"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "church",
+   "title": "2. The church",
+   "lead": "The one property with no plan.",
+   "chips": [
+    "Not sure",
+    "Ask Dad",
+    "Let's talk"
+   ],
+   "qs": [
+    {
+     "id": "ch1",
+     "t": "What is the plan for the church?",
+     "w": "Where it stands from your answers: the family owns it through 343 County St LLC, about $300K is owed on it, it is worth about $500K, and it earns nothing. So it costs money every month and brings none in. Nicholas's lean: if nobody has a real use for it, sell it and clear the $300K. But it is your and Dad's call.",
+     "type": "choice",
+     "opts": [
+      "Sell it and clear the debt (Nicholas recommends)",
+      "Keep it: there is a plan for it (write it below)",
+      "Rent it out",
+      "Not sure, let's talk"
+     ],
+     "note": "The plan, if there is one, and by when"
+    },
+    {
+     "id": "ch2",
+     "t": "What does the church cost to hold per year?",
+     "type": "multi",
+     "rows": [
+      "Mortgage or loan payments per year",
+      "Taxes, insurance, heat, upkeep per year, rough"
+     ]
+    },
+    {
+     "id": "ch3",
+     "t": "Is there anything about the church Nicholas doesn't know? Its history, a promise made, a reason to keep it?",
+     "type": "text",
+     "ph": "In your words"
+    }
+   ]
+  }
+ ]
+}

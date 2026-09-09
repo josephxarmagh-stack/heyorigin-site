@@ -2,7 +2,7 @@
  "slug": "mom-7a8089",
  "title": "Mom's questions",
  "who": "Mom",
- "lede": "Everything Nicholas needs from you, in one place: two short parts for the new websites and five short parts for the family picture. Answer in your own words, in any order, over as many sittings as you like. Each part sends itself to Nicholas a few seconds after you stop typing (watch for the green Sent line) and keeps a copy on your phone. If you don't know, tap Not sure or Ask Dad and move on. Never type an account number, password or Social Security number here: tap In person.",
+ "lede": "Everything Nicholas still needs from you, in one place. The first pages were answered on September 9; this is what's left. Each part sends itself to Nicholas a few seconds after you stop typing and keeps a copy on your phone.",
  "sections": [
   {
    "id": "udl",
@@ -302,269 +302,127 @@
    ]
   },
   {
-   "id": "props",
-   "title": "3. Properties",
-   "lead": "For each one: who owns it, what it's worth, what's owed. Rough numbers are fine. Never type account numbers, tell Nicholas in person.",
-   "qs": [
-    {
-     "id": "p1",
-     "t": "The warehouse (Fairhaven)",
-     "type": "multi",
-     "rows": [
-      "Who owns it on paper (a trust, a company, a person)?",
-      "Mortgage: which bank, what's owed today, and the monthly payment",
-      "What do you think it would sell for today?",
-      "Does the business pay rent for it? To whom, and how much a year?"
-     ]
-    },
-    {
-     "id": "p2",
-     "t": "The two lots next to the warehouse",
-     "type": "multi",
-     "rows": [
-      "Who owns them on paper?",
-      "Anything owed on them?",
-      "What would they sell for today?"
-     ]
-    },
-    {
-     "id": "p3",
-     "t": "The Westport Point units (ours: 2, 4, 6)",
-     "type": "multi",
-     "rows": [
-      "Who owns our units on paper?",
-      "Mortgage: bank, balance owed today, monthly payment",
-      "What would our units sell for today?",
-      "Rent they earn per year"
-     ]
-    },
-    {
-     "id": "p4",
-     "t": "Your home",
-     "type": "multi",
-     "rows": [
-      "Mortgage: bank, balance owed today, monthly payment",
-      "Any second mortgage or home-equity line: balance owed",
-      "What would it sell for today?"
-     ]
-    },
-    {
-     "id": "p5",
-     "t": "Nicholas's house",
-     "type": "multi",
-     "rows": [
-      "First mortgage: bank, balance owed, monthly payment, whose name",
-      "Second mortgage: bank, balance owed, monthly payment, whose name",
-      "Rent unit 2 earns"
-     ]
-    },
-    {
-     "id": "p6",
-     "t": "The New Bedford retail building",
-     "type": "multi",
-     "rows": [
-      "Mortgage: bank, balance owed today, monthly payment",
-      "What would it sell for today?",
-      "Rent it earns per year"
-     ]
-    },
-    {
-     "id": "p7",
-     "t": "The old church (New Bedford)",
-     "type": "multi",
-     "rows": [
-      "Do we own it today, and in whose name?",
-      "Anything owed on it?",
-      "What would it sell for today?"
-     ]
-    },
-    {
-     "id": "p8",
-     "t": "Any other property, land, or rental we haven't listed, including the house that is rented out short-term",
-     "type": "text",
-     "ph": "A nickname is fine: who owns it, what's owed, what it would sell for, what it earns a year"
-    }
-   ],
+   "id": "last",
+   "title": "3. The family picture: the last eight",
+   "lead": "Eight questions. The first three make the net worth number solid.",
    "chips": [
     "Not sure",
     "Ask Dad",
     "Need records",
     "In person"
+   ],
+   "qs": [
+    {
+     "id": "f1",
+     "t": "Dana Farms, the rental house: what is it worth today, roughly?",
+     "w": "On the first page it came through as \"#25K\" against a $240K mortgage, so the number got lost.",
+     "type": "text",
+     "ph": "A rough sale price"
+    },
+    {
+     "id": "f2",
+     "t": "The life insurance: which policies, on whom, and are the $590K and $900K amounts loans borrowed against the policies?",
+     "w": "You wrote: one policy 'worth 3.6' with a $590K loan, New York Life worth $1.5M that 'owes $900K', and your Prudential with a $50K loan and $25K owed. These are the two biggest unclear numbers on the whole page.",
+     "type": "multi",
+     "rows": [
+      "The '3.6' policy: whose life, which company, and is the $590K a loan against it?",
+      "The New York Life policy: whose life, and is the $900K a loan against it?",
+      "Your Prudential: is the $25K what's still owed on the $50K loan?"
+     ]
+    },
+    {
+     "id": "f3",
+     "t": "2025 profit: did the wholesale side and the two shops truly clear nothing last year?",
+     "w": "You wrote \"none\" for wholesale profit, shop profit, and what you and Dad take out. If that is a true zero, say so; if the question read wrong, give the rough numbers.",
+     "type": "multi",
+     "rows": [
+      "Wholesale (Upper Deck + Moby Dick) 2025 profit, rough",
+      "The two shops 2025 profit, rough",
+      "What you and Dad lived on in 2025, rough"
+     ]
+    },
+    {
+     "id": "f4",
+     "t": "The old church: who owns 343 County St LLC, and who is the $300K owed to?",
+     "type": "multi",
+     "rows": [
+      "Who owns the LLC (percent each)?",
+      "The $300K: which bank or person, and the monthly payment?"
+     ]
+    },
+    {
+     "id": "f5",
+     "t": "The $262K line of credit on Westport unit 4: what was it for, what rate, and who pays it?",
+     "type": "text",
+     "ph": "Purpose, rate, who pays"
+    },
+    {
+     "id": "f6",
+     "t": "Personal checking and savings: one rough total, and which bank",
+     "type": "text",
+     "ph": "Rough total, bank"
+    },
+    {
+     "id": "f7",
+     "t": "The wills: which lawyer holds them, and is there any trust set up for the estate itself?",
+     "type": "multi",
+     "rows": [
+      "The lawyer (name of the office is enough)",
+      "Any estate trust? Yes / no / not sure"
+     ]
+    },
+    {
+     "id": "f8",
+     "t": "The four businesses: the exact legal name and EIN of each",
+     "w": "One line per business. Needed for any loan, sale or succession paper. If it's easier, say \"in the folder\" and tell Nicholas where.",
+     "type": "multi",
+     "rows": [
+      "Upper Deck Ltd: legal name, EIN",
+      "Moby Dick Specialties: legal name, EIN",
+      "Moby Dick Nauticals: legal name, EIN",
+      "The Bedford Merchant: legal name, EIN"
+     ]
+    }
    ]
   },
   {
-   "id": "biz",
-   "title": "4. The businesses",
-   "lead": "Upper Deck, Moby Dick Specialties, Moby Dick Nauticals, The Bedford Merchant. What they own, what they owe, what they make.",
-   "qs": [
-    {
-     "id": "b1",
-     "t": "Who owns the businesses, and what percent each?",
-     "type": "text",
-     "ph": "Dad %, Mom %, anyone else. One company or several?"
-    },
-    {
-     "id": "b2",
-     "t": "Inventory at cost, today",
-     "type": "multi",
-     "rows": [
-      "In the warehouse (the number from the office system, or your best estimate)",
-      "In the Moby Dick Nauticals shop",
-      "In The Bedford Merchant shop"
-     ]
-    },
-    {
-     "id": "b4",
-     "t": "Cash in the business accounts today",
-     "type": "text",
-     "ph": "A range is fine"
-    },
-    {
-     "id": "b5",
-     "t": "What the businesses owe",
-     "type": "multi",
-     "rows": [
-      "Bank loans or credit lines: bank, balance owed, payment",
-      "Money owed to suppliers right now (rough)",
-      "Anything else owed"
-     ]
-    },
-    {
-     "id": "b6",
-     "t": "What the businesses make",
-     "w": "The number off 2025's tax return is fine, or a rough guess.",
-     "type": "multi",
-     "rows": [
-      "2025 profit for the wholesale side, after your and Dad's pay",
-      "2025 profit for each retail shop",
-      "What you and Dad take out per year, roughly"
-     ]
-    },
-    {
-     "id": "b7",
-     "t": "Equipment, trucks, vehicles the businesses own",
-     "type": "text",
-     "ph": "What, and rough value"
-    },
-    {
-     "id": "b8",
-     "t": "The businesses' accountant, so Nicholas can ask for any numbers you don't have handy",
-     "type": "text",
-     "ph": "Name, and an email or phone number"
-    }
-   ],
+   "id": "church",
+   "title": "4. The church",
+   "lead": "The one property with no plan.",
    "chips": [
     "Not sure",
     "Ask Dad",
-    "Need records",
-    "In person"
-   ]
-  },
-  {
-   "id": "trusts",
-   "title": "5. Trusts and companies",
-   "lead": "So each asset lands under the right owner.",
-   "qs": [
-    {
-     "id": "t1",
-     "t": "The family realty trust: what it owns, and who the beneficiaries are",
-     "type": "text"
-    },
-    {
-     "id": "t2",
-     "t": "The family realty LLC: what it owns, and who the members are (percent each)",
-     "type": "text"
-    },
-    {
-     "id": "t3",
-     "t": "Any other trust, LLC, or company in the family, including one that is closed or being closed: name, what it holds, who owns it, and if closed, when",
-     "type": "text"
-    },
-    {
-     "id": "t4",
-     "t": "Where are the papers kept (deeds, trust papers, company papers), and who is the trustee?",
-     "type": "text",
-     "ph": "A drawer, a lawyer's office, a safe; the trustee's role (Dad, you, a lawyer)"
-    },
-    {
-     "id": "t5",
-     "t": "Is there a will or an estate plan? With which lawyer?",
-     "type": "text",
-     "ph": "Yes / no / not sure; the law office"
-    }
+    "Let's talk"
    ],
-   "chips": [
-    "Not sure",
-    "Ask Dad",
-    "Need records",
-    "In person"
-   ]
-  },
-  {
-   "id": "cash",
-   "title": "6. Cash, investments, debt",
-   "lead": "Totals and ranges. Names of banks, never account numbers.",
    "qs": [
     {
-     "id": "c1",
-     "t": "Cash and investments, total today",
+     "id": "ch1",
+     "t": "What is the plan for the church?",
+     "w": "Where it stands from your answers: the family owns it through 343 County St LLC, about $300K is owed on it, it is worth about $500K, and it earns nothing. So it costs money every month and brings none in. Nicholas's lean: if nobody has a real use for it, sell it and clear the $300K. But it is your and Dad's call.",
+     "type": "choice",
+     "opts": [
+      "Sell it and clear the debt (Nicholas recommends)",
+      "Keep it: there is a plan for it (write it below)",
+      "Rent it out",
+      "Not sure, let's talk"
+     ],
+     "note": "The plan, if there is one, and by when"
+    },
+    {
+     "id": "ch2",
+     "t": "What does the church cost to hold per year?",
      "type": "multi",
      "rows": [
-      "Checking and savings: which banks, rough total",
-      "Investments and retirement (brokerage, IRA, 401k, pension): where, rough total"
+      "Mortgage or loan payments per year",
+      "Taxes, insurance, heat, upkeep per year, rough"
      ]
     },
     {
-     "id": "c3",
-     "t": "Life insurance with a cash value, if any",
+     "id": "ch3",
+     "t": "Is there anything about the church Nicholas doesn't know? Its history, a promise made, a reason to keep it?",
      "type": "text",
-     "ph": "Company, cash value, death benefit"
-    },
-    {
-     "id": "c4",
-     "t": "Personal debts other than mortgages",
-     "type": "multi",
-     "rows": [
-      "Credit cards carried month to month: total owed",
-      "Car loans, personal loans, lines of credit: total owed"
-     ]
-    },
-    {
-     "id": "c5",
-     "t": "Vehicles, boats, or valuables worth more than $10k",
-     "type": "text",
-     "ph": "What, and rough value"
-    },
-    {
-     "id": "c6",
-     "t": "Money owed between family members, or to or from anyone else",
-     "type": "text",
-     "ph": "Who owes whom, rough amount"
+     "ph": "In your words"
     }
-   ],
-   "chips": [
-    "Not sure",
-    "Ask Dad",
-    "Need records",
-    "In person"
-   ]
-  },
-  {
-   "id": "you",
-   "title": "7. Anything else",
-   "lead": "One question.",
-   "qs": [
-    {
-     "id": "x1",
-     "t": "Anything you own or owe that isn't on this page",
-     "type": "text"
-    }
-   ],
-   "chips": [
-    "Not sure",
-    "Ask Dad",
-    "Need records",
-    "In person"
    ]
   }
  ]
