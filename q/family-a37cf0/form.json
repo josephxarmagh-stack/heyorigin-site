@@ -1,0 +1,231 @@
+{
+ "slug": "family",
+ "title": "The family picture",
+ "who": "Mom",
+ "lede": "What the family owns, what it's worth, and what's owed on it, so Nicholas can build one true net worth number. Rough numbers and ranges are fine, in any order, over as many sittings as you like. Never type an account number, password, or Social Security number here: say \"in person\" and tell him. Everything you type saves to Nicholas by itself a few seconds after you stop typing.",
+ "sections": [
+  {
+   "id": "props",
+   "title": "1. Properties",
+   "lead": "For each one: who owns it, what it's worth, what's owed. Rough numbers are fine. Never type account numbers, tell Nicholas in person.",
+   "qs": [
+    {
+     "id": "p1",
+     "t": "The warehouse (Fairhaven)",
+     "type": "multi",
+     "rows": [
+      "Who owns it on paper (trust, company, person)?",
+      "Mortgage: bank, balance owed today, monthly payment",
+      "What do you think it would sell for today?",
+      "Rent it earns, if any (does the business pay the trust?)"
+     ]
+    },
+    {
+     "id": "p2",
+     "t": "The two lots next to the warehouse",
+     "type": "multi",
+     "rows": [
+      "Who owns them on paper?",
+      "Anything owed on them?",
+      "What would they sell for today?"
+     ]
+    },
+    {
+     "id": "p3",
+     "t": "The Westport Point units (ours: 2, 4, 6)",
+     "type": "multi",
+     "rows": [
+      "Who owns our units on paper?",
+      "Mortgage: bank, balance owed today, monthly payment",
+      "What would our units sell for today?",
+      "Rent they earn per year"
+     ]
+    },
+    {
+     "id": "p4",
+     "t": "Your home",
+     "type": "multi",
+     "rows": [
+      "Mortgage: bank, balance owed today, monthly payment",
+      "Any second mortgage or home-equity line: balance owed",
+      "What would it sell for today?"
+     ]
+    },
+    {
+     "id": "p5",
+     "t": "Nicholas's house (Mattapoisett)",
+     "type": "multi",
+     "rows": [
+      "First mortgage: bank, balance owed, monthly payment, whose name",
+      "Second mortgage: bank, balance owed, monthly payment, whose name",
+      "Rent unit 2 earns"
+     ]
+    },
+    {
+     "id": "p6",
+     "t": "The New Bedford retail building",
+     "type": "multi",
+     "rows": [
+      "Who owns the LLC that holds it, and what percent each?",
+      "Mortgage: bank, balance owed today, monthly payment",
+      "What would it sell for today?",
+      "Rent it earns per year"
+     ]
+    },
+    {
+     "id": "p7",
+     "t": "The old church (New Bedford)",
+     "type": "multi",
+     "rows": [
+      "Do we own it today, and in whose name?",
+      "Anything owed on it?",
+      "What would it sell for today?"
+     ]
+    },
+    {
+     "id": "p8",
+     "t": "Any other property, land, or rental we haven't listed",
+     "type": "text",
+     "ph": "Address, who owns it, what's owed, what it's worth"
+    }
+   ]
+  },
+  {
+   "id": "biz",
+   "title": "2. The businesses",
+   "lead": "Upper Deck, Moby Dick Specialties, Moby Dick Nauticals, The Bedford Merchant. What they own, what they owe, what they make.",
+   "qs": [
+    {
+     "id": "b1",
+     "t": "Who owns the businesses, and what percent each?",
+     "type": "text",
+     "ph": "Dad %, Mom %, anyone else. One company or several?"
+    },
+    {
+     "id": "b2",
+     "t": "Warehouse inventory at cost, today",
+     "type": "text",
+     "ph": "The number from the office system, or your best estimate"
+    },
+    {
+     "id": "b3",
+     "t": "Inventory in the two retail shops, at cost",
+     "type": "text",
+     "ph": "Moby Dick Nauticals / The Bedford Merchant"
+    },
+    {
+     "id": "b4",
+     "t": "Cash in the business accounts today",
+     "type": "text",
+     "ph": "A range is fine"
+    },
+    {
+     "id": "b5",
+     "t": "What the businesses owe",
+     "type": "multi",
+     "rows": [
+      "Bank loans or credit lines: bank, balance owed, payment",
+      "Money owed to suppliers right now (rough)",
+      "Anything else owed"
+     ]
+    },
+    {
+     "id": "b6",
+     "t": "What the businesses make",
+     "type": "multi",
+     "rows": [
+      "Last year's profit for the wholesale side (after paying you and Dad)",
+      "Last year's profit for each retail shop",
+      "What you and Dad take out per year, roughly"
+     ]
+    },
+    {
+     "id": "b7",
+     "t": "Equipment, trucks, vehicles the businesses own",
+     "type": "text",
+     "ph": "What, and rough value"
+    }
+   ]
+  },
+  {
+   "id": "trusts",
+   "title": "3. Trusts and companies",
+   "lead": "So each asset lands under the right owner.",
+   "qs": [
+    {
+     "id": "t1",
+     "t": "PAP Realty Trust: what it owns, and who the beneficiaries are",
+     "type": "text"
+    },
+    {
+     "id": "t2",
+     "t": "Jo-Jeanne Realty LLC: what it owns, and who the members are (percent each)",
+     "type": "text"
+    },
+    {
+     "id": "t3",
+     "t": "Any other trust, LLC, or company in the family: name, what it holds, who owns it",
+     "type": "text"
+    }
+   ]
+  },
+  {
+   "id": "cash",
+   "title": "4. Cash, investments, and debt",
+   "lead": "Totals and ranges. Names of banks, never account numbers.",
+   "qs": [
+    {
+     "id": "c1",
+     "t": "Personal checking and savings, total today",
+     "type": "text",
+     "ph": "Which banks, rough total"
+    },
+    {
+     "id": "c2",
+     "t": "Investments and retirement, total today",
+     "type": "text",
+     "ph": "Brokerage, IRA, 401k, pension: where, rough total"
+    },
+    {
+     "id": "c3",
+     "t": "Life insurance with a cash value, if any",
+     "type": "text",
+     "ph": "Company, cash value, death benefit"
+    },
+    {
+     "id": "c4",
+     "t": "Personal debts other than mortgages",
+     "type": "multi",
+     "rows": [
+      "Credit cards carried month to month: total owed",
+      "Car loans, personal loans, lines of credit: total owed"
+     ]
+    },
+    {
+     "id": "c5",
+     "t": "Vehicles, boats, or valuables worth more than $10k",
+     "type": "text",
+     "ph": "What, and rough value"
+    },
+    {
+     "id": "c6",
+     "t": "Money owed to the family by anyone, or by the family to anyone",
+     "type": "text",
+     "ph": "Including the loan to Nicholas: the number you have in mind"
+    }
+   ]
+  },
+  {
+   "id": "you",
+   "title": "5. Anything else",
+   "lead": "One question.",
+   "qs": [
+    {
+     "id": "u1",
+     "t": "Anything you own or owe that isn't on this page",
+     "type": "text"
+    }
+   ]
+  }
+ ]
+}

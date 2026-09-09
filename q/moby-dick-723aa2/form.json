@@ -1,0 +1,154 @@
+{
+ "slug": "moby-dick",
+ "title": "Moby Dick: launch questions",
+ "who": "Mom",
+ "lede": "For the new Moby Dick Specialties website. Answer in your own words, in any order, over as many sittings as you like. Everything you type saves to Nicholas by itself a few seconds after you stop typing: watch for the green Saved line. Nothing to send.",
+ "sections": [
+  {
+   "id": "all",
+   "title": "Moby Dick Specialties",
+   "lead": "12 questions. The research is written under each one.",
+   "qs": [
+    {
+     "id": "m1",
+     "t": "The Moby Dick minimum is $250 (settled: every old-site page says so; the $75 was only the printed '22–'23 book). Counted before or after quantity discounts?",
+     "type": "choice",
+     "opts": [
+      "$250 at list price (before breaks)",
+      "$250 after quantity discounts"
+     ],
+     "note": "Keep a $75 showroom minimum for showroom customers? Yes / no"
+    },
+    {
+     "id": "m2",
+     "t": "Four items whose base price went up (bases verified on the old site). What is their 12+ price?",
+     "w": "The site shows a 12+ price BELOW the old one. These items are newer than the printed book, so only you have the number.",
+     "type": "table",
+     "cols": [
+      "Item",
+      "Base now",
+      "Site shows at 12+",
+      "Correct 12+ price"
+     ],
+     "rows": [
+      [
+       "MR-419",
+       "$3.50",
+       "$3.25"
+      ],
+      [
+       "MR-413",
+       "$3.25",
+       "$3.00"
+      ],
+      [
+       "MR-412",
+       "$3.25",
+       "$3.00"
+      ],
+      [
+       "MR-426",
+       "$3.75",
+       "$3.50"
+      ]
+     ]
+    },
+    {
+     "id": "m2b",
+     "t": "MA-1051: base $3.65, the site shows 4+ at $3.64 and 8+ at $3.35. Is the 4+ price real, or delete it?",
+     "type": "text"
+    },
+    {
+     "id": "m3",
+     "t": "41 Moby Dick items (the MR resin figures) had their quantity tables cleared on 8/19. None are in the printed book.",
+     "type": "choice",
+     "opts": [
+      "Base price only for all 41",
+      "Put the July tiers back for all 41",
+      "Send me the list, I'll mark each line"
+     ]
+    },
+    {
+     "id": "m4",
+     "t": "Paying: the old Moby Dick site uses the same words as Upper Deck. Same answers as Upper Deck question 2?",
+     "type": "text",
+     "ph": "SAME, or write the difference"
+    },
+    {
+     "id": "m5",
+     "t": "Showroom pickup: the cart asks \"How will you get this order?\" AND Shopify's checkout has its own Pickup switch. One path only.",
+     "type": "choice",
+     "opts": [
+      "Our cart question",
+      "Shopify's pickup switch"
+     ]
+    },
+    {
+     "id": "m6",
+     "t": "Stoneware (8 items) and Butlers (4 items) exist on the old site but every one is out of stock with no ETA. They were taken out of the new menu on 9/4.",
+     "type": "choice",
+     "opts": [
+      "Restocking — put them back when stock lands",
+      "Dropped for good"
+     ]
+    },
+    {
+     "id": "m7",
+     "t": "Showroom appointments: both old sites already use the same Calendly page (udlshowroom/showroom-appt). Keep it shared?",
+     "type": "choice",
+     "opts": [
+      "Keep it shared",
+      "Moby Dick needs its own"
+     ]
+    },
+    {
+     "id": "m8",
+     "t": "The catalog: the old site still offers only the '22–'23 book, and its specials say \"GOOD UNTIL December 31, 2023\". No newer full catalog was found anywhere.",
+     "type": "multi",
+     "rows": [
+      "Keep the '22–'23 book on the new site until the next one is printed?",
+      "When is the next Moby Dick catalog due?",
+      "The page-5 specials: expired, or still honored?",
+      "OK for Nicholas to ask Real3D to swap the public flipbook to the clean no-price edition?"
+     ]
+    },
+    {
+     "id": "m9",
+     "t": "Claims: the old Moby Dick claim form has the same rules as Upper Deck's (brass tarnish excluded, glass buoys final sale, 10 days from the ship date, 15% keep-it, next-order credit). Same answer as Upper Deck question 8?",
+     "type": "text",
+     "ph": "SAME, or the difference"
+    },
+    {
+     "id": "m10",
+     "t": "Who runs the Moby Dick web orders",
+     "w": "Found: orders@mobydickspecialties.com is on every old-site page, fax 508-994-9830. (The old Why Register page still prints the dead 1-800 number and a misspelled email — ignore those.)",
+     "type": "multi",
+     "rows": [
+      "Same people as Upper Deck? (SAME, or names)",
+      "orders@mobydickspecialties.com is the inbox — correct?",
+      "Who keys Moby Dick web orders into Acctivate / backup"
+     ]
+    },
+    {
+     "id": "m11",
+     "t": "50 items the old site no longer sells but the new site still lists — leave them, or archive?",
+     "w": "Nicholas said leave them on 9/4. Confirm, or change it.",
+     "type": "choice",
+     "opts": [
+      "Leave them",
+      "Archive them"
+     ]
+    },
+    {
+     "id": "m12",
+     "t": "Prices for everyone — same ruling as Upper Deck question 10?",
+     "type": "choice",
+     "opts": [
+      "Same as Upper Deck",
+      "Different (write it)"
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,299 @@
+{
+ "slug": "upper-deck",
+ "title": "Upper Deck: launch questions",
+ "who": "Mom",
+ "lede": "For the new Upper Deck website. Answer in your own words, in any order, over as many sittings as you like. Everything you type saves to Nicholas by itself a few seconds after you stop typing: watch for the green Saved line. Nothing to send.",
+ "sections": [
+  {
+   "id": "all",
+   "title": "Upper Deck Ltd",
+   "lead": "13 questions. The research is written under each one.",
+   "qs": [
+    {
+     "id": "u1",
+     "t": "The $250 minimum: counted before or after quantity discounts?",
+     "w": "Settled by research: both old sites say \"ONLY $250 MINIMUM PURCHASE\" on every page, and the old cart shows a separate $75 showroom minimum for showroom customers. What no page says is whether the $250 is counted at list price or after the quantity breaks (example: 18 rabbits are $256.50 at list, $229.50 after the break).",
+     "type": "choice",
+     "opts": [
+      "$250 at list price (before breaks)",
+      "$250 after quantity discounts"
+     ],
+     "note": "Keep a $75 showroom minimum on the new site too? Yes / no"
+    },
+    {
+     "id": "u2",
+     "t": "Paying: the old site says \"check, Visa, or MasterCard for full amount, plus postage with order unless other financial arrangements have been made.\" Three things it doesn't say:",
+     "type": "multi",
+     "rows": [
+      "Is the card charged when the order is PLACED, or once when it SHIPS (merchandise plus actual freight)?",
+      "A new customer with no card on file: what happens on their first order?",
+      "Checks: still accepted? Any customer on net terms?"
+     ]
+    },
+    {
+     "id": "u3",
+     "t": "Five items show a quantity price HIGHER than the single price. Which number is right?",
+     "w": "The catalog already settles one: X2060 prints \"4 @ $11.75 ea.\" (same as the single price), so its $13.75 break is wrong. The other four are not in the printed books.",
+     "type": "table",
+     "cols": [
+      "Item",
+      "Single",
+      "Quantity price shown",
+      "Your ruling"
+     ],
+     "rows": [
+      [
+       "L434",
+       "$27.50",
+       "4+ @ $29.50"
+      ],
+      [
+       "UAL128",
+       "$64.50",
+       "6+ @ $67.50"
+      ],
+      [
+       "UDXL201",
+       "$124.50",
+       "3+ @ $127.50"
+      ],
+      [
+       "UT906",
+       "$12.50",
+       "12+ @ $13.50"
+      ],
+      [
+       "X2060",
+       "$11.75",
+       "4+ @ $13.75 — catalog says 4 @ $11.75"
+      ]
+     ]
+    },
+    {
+     "id": "u4",
+     "t": "23 items had their quantity tables cleared on 8/19. Base price only, or these tiers?",
+     "w": "Five are printed in the 2026 books and are filled in below as \"catalog says\" — confirm or change them. The other 18 are not in the books: write B for base only, T for the July tiers, or the correct tiers.",
+     "type": "table",
+     "cols": [
+      "Item",
+      "Base",
+      "Old tiers (July import)",
+      "Your ruling"
+     ],
+     "rows": [
+      [
+       "UT591",
+       "$7.25",
+       "2+ 7.75 · 4+ 6.95"
+      ],
+      [
+       "UW2616",
+       "$55.00",
+       "1+ 55.50 · 2+ 52.50"
+      ],
+      [
+       "UX4016",
+       "$9.95",
+       "1+ 9.50 · 2+ 9.00"
+      ],
+      [
+       "UX4136",
+       "$10.75",
+       "3+ 10.25 · 6+ 9.75"
+      ],
+      [
+       "UX4237",
+       "$12.00",
+       "2+ 11.25 · 4+ 10.75"
+      ],
+      [
+       "UX4428",
+       "$10.25",
+       "2+ 9.75 · 4+ 9.25"
+      ],
+      [
+       "UX4454",
+       "$2.49",
+       "6+ 2.50 · 12+ 2.35"
+      ],
+      [
+       "UX9179",
+       "$54.50",
+       "4+ 54.50"
+      ],
+      [
+       "UX9260",
+       "$27.50",
+       "2+ 32.50 · 4+ 29.50"
+      ],
+      [
+       "X1366",
+       "$13.50",
+       "3+ 12.75 · 6+ 12.25"
+      ],
+      [
+       "X1877",
+       "$16.50",
+       "2+ 15.25 · 4+ 13.75"
+      ],
+      [
+       "X2241",
+       "$17.50",
+       "2+ 16.75 · 4+ 16.25"
+      ],
+      [
+       "X2297",
+       "$9.50",
+       "4+ 9.00 · 6+ 8.50"
+      ],
+      [
+       "X2401",
+       "$21.50",
+       "2+ 18.75 · 4+ 17.75"
+      ],
+      [
+       "X2521",
+       "$14.25",
+       "2+ 13.50 · 4+ 12.75"
+      ],
+      [
+       "X2593",
+       "$11.75",
+       "3+ 10.50 · 6+ 9.75"
+      ],
+      [
+       "X2627",
+       "$11.75",
+       "4+ 10.50 · 8+ 9.75"
+      ],
+      [
+       "X2628",
+       "$8.25",
+       "3+ 7.75 · 6+ 7.25"
+      ],
+      [
+       "X2639",
+       "$11.75",
+       "3+ 10.50 · 6+ 9.75"
+      ],
+      [
+       "X2640",
+       "$10.95",
+       "3+ 9.95 · 6+ 9.25"
+      ],
+      [
+       "X5042",
+       "$6.25",
+       "4+ 5.75 · 8+ 5.25"
+      ],
+      [
+       "X648",
+       "$13.25",
+       "3+ 12.50 · 6+ 12.00"
+      ],
+      [
+       "X683",
+       "$6.75",
+       "4+ 6.25 · 12+ 5.95"
+      ]
+     ]
+    },
+    {
+     "id": "u5",
+     "t": "\"Min. N\" items: the old site sets the rule PER ITEM.",
+     "w": "Research found the old site's own settings: Cardinal (Min. 4) must be bought in twos above 4; X2060 (Min. 4) can be any amount above 4. Today the new site treats every Min. item as \"at least N, then any amount\".",
+     "type": "choice",
+     "opts": [
+      "Copy each item's old-site rule exactly (Nicholas recommends)",
+      "One rule for all: at least N, then any amount",
+      "One rule for all: multiples of N"
+     ]
+    },
+    {
+     "id": "u6",
+     "t": "The catalog specials UDLM26A ($250 cast iron) and UDLM26B ($600 mixed): 15% off the first price, \"cannot be combined\", no end date printed.",
+     "type": "multi",
+     "rows": [
+      "Still honored for 2026 web orders?",
+      "Do they stack with quantity prices, or 15% off the first price only?",
+      "How does a customer ask for one on a web order: note on the order, or call?"
+     ]
+    },
+    {
+     "id": "u7",
+     "t": "Tradeshows: research found four booth numbers on the show organizers' sites. Two still open.",
+     "w": "Found: Surf Expo Sep 16–18 booth 2268 · Smoky Mountain Nov 4–7 booth 1723 · Ocean City Nov 15–17 booth 120 · Grand Strand Dec 6–9 booth 1010 (all listed as Moby Dick Specialties / Upper Deck Ltd).",
+     "type": "multi",
+     "rows": [
+      "Are those four right, and are you going to all four?",
+      "Surf Expo Jan 6–8, 2027: going? booth?",
+      "Philadelphia Gift Show Jan 31–Feb 2, 2027: going? booth? (last year's was 1213)"
+     ]
+    },
+    {
+     "id": "u8",
+     "t": "Claims: the old claim form's rules, found by research. Confirm they still hold.",
+     "w": "Old claim form: brass tarnish is not a claim · glass buoys are final sale (cosmetic bubbles, scratches, colour variation excluded) · file within 10 days of the SHIPPED or pickup date · option to keep damaged goods for 15% off the invoiced price · credit goes to the next order, no card or freight refund · packaging and photos required. Returns for dissatisfaction: notify within 10 days, return within 30, 15% restocking fee.",
+     "type": "choice",
+     "opts": [
+      "All still true — keep exactly that",
+      "Something changed (write it below)"
+     ]
+    },
+    {
+     "id": "u9",
+     "t": "Who runs the web orders from launch day (names, primary and backup)",
+     "w": "Research found: the old site publishes orders@upperdeckltd.com for orders, customerservice@upperdeckltd.com for claims, and customer-service phone 508-992-3827. Acctivate does sell a Shopify integration that downloads orders by itself (setup and price by quote).",
+     "type": "multi",
+     "rows": [
+      "Who receives the order email (name), and is orders@upperdeckltd.com the right inbox?",
+      "Who keys web orders into Acctivate / backup",
+      "Did the OLD website drop orders into Acctivate by itself, or did someone key them? Should the new one connect (the tech guy is setting Acctivate up)?",
+      "Who updates stock on the site when the warehouse runs out",
+      "Who handles payment and freight billing",
+      "Who approves new applications and reviews claims"
+     ]
+    },
+    {
+     "id": "u10",
+     "t": "Prices for everyone? The one policy question",
+     "w": "The old site already shows every wholesale price to anyone who looks (research confirmed the public price feed). The new site hides them behind login, but once the password comes off, Shopify's built-in product data can still show BASE prices to a script (never the quantity tiers, never the catalogs).",
+     "type": "choice",
+     "opts": [
+      "Accept it — same as today, launch on time (Nicholas recommends)",
+      "Hide everything — a rebuild on Shopify's B2B catalogs, launch moves"
+     ]
+    },
+    {
+     "id": "u11",
+     "t": "Product facts — research settled most of these, confirm the rest",
+     "w": "Found: P465 Bonnet Girls and A140 Nevr-Dull are sold by the DOZEN (\"Quantity 1 = 12\"); the catalog prints P465 \"16 dz. cl.\" = 192 pieces per case and A140 \"6 dz. cl.\" = 72 pieces per case at $39.50 a dozen. Nicholas fixes the new site's case-lot labels to match. Cellphone Holders never existed as a category on the old site.",
+     "type": "multi",
+     "rows": [
+      "P465 and A140: unit = one dozen, cases = 16 dozen and 6 dozen — correct?",
+      "UA1489 Victorian Puzzle Game (Min. 3): size / material / what one unit holds",
+      "UX9321 Teacup Stake (Pkg. 2): two colours in the photo — assorted, or does the buyer choose?",
+      "Cellphone Holders stays retired — yes?"
+     ]
+    },
+    {
+     "id": "u12",
+     "t": "Two things the test order showed",
+     "type": "multi",
+     "rows": [
+      "Checkout shows a delivery estimate \"Mon Sep 14 – Wed Sep 16\" under the $0 freight line (Shopify adds it). Turn it off?",
+      "Checkout has its own Ship / Pickup switch on top of our cart question. Keep Shopify's pickup switch, or only our question?",
+      "THE OFFICE RULE: process a web order only if the customer is tagged wholesale AND the order shows \"Source: Wholesale Pricing Discount\"; anything else, call the buyer and re-key. Agreed? Who checks it (name)?"
+     ]
+    },
+    {
+     "id": "u13",
+     "t": "Hours: the old site contradicts itself. Which is true?",
+     "w": "Old site footer: Mon–Fri 8 AM–3 PM. Old contact page: Mon–Thu 8–4, showroom by appointment 8:15–2:15. New site: Mon–Thu 8–3.",
+     "type": "text",
+     "ph": "Office hours / showroom hours / closed Friday?"
+    }
+   ]
+  }
+ ]
+}
