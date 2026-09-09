@@ -7,47 +7,13 @@
   {
    "id": "all",
    "title": "Upper Deck: what's left",
-   "lead": "Two questions.",
+   "lead": "One question.",
    "chips": [
     "Not sure",
     "Ask Dad",
     "In person"
    ],
    "qs": [
-    {
-     "id": "r1",
-     "t": "Four items marked \"fixed prices\": L434, UAL128, UDXL201, UT906. What should each show?",
-     "w": "\"Fixed\" didn't tell us the number. Type the right single price and, if there is one, the right quantity price (example: 27.50 / 4+ 26.50), or ONE if there should be no quantity price.",
-     "type": "table",
-     "cols": [
-      "Item",
-      "Single price now",
-      "Quantity price now",
-      "What it should be"
-     ],
-     "rows": [
-      [
-       "L434",
-       "$27.50",
-       "4+ @ $29.50"
-      ],
-      [
-       "UAL128",
-       "$64.50",
-       "6+ @ $67.50"
-      ],
-      [
-       "UDXL201",
-       "$124.50",
-       "3+ @ $127.50"
-      ],
-      [
-       "UT906",
-       "$12.50",
-       "12+ @ $13.50"
-      ]
-     ]
-    },
     {
      "id": "r0",
      "t": "Anything you would change in Veronica's answers?",
