@@ -46,27 +46,39 @@
     {
      "id": "u3",
      "t": "Five items: the quantity price is HIGHER than the single price. Which one is right?",
-     "w": "A quantity price should be lower, not higher. These five came over from the old website that way. Nicholas will text you a sheet with the two prices for each item. For each line type SINGLE if the single price is right, QUANTITY if the quantity price is right, or type the right prices. If you don't want to look them up, type LOOK LATER.",
+     "w": "A quantity price should be lower, not higher. These five came over from the old website that way. For each line type SINGLE if the single price is right, QUANTITY if the quantity price is right, or type the right prices.",
      "type": "table",
      "cols": [
       "Item",
+      "Single price",
+      "Quantity price shown",
       "Your answer: SINGLE, QUANTITY, or the right prices"
      ],
      "rows": [
       [
-       "L434"
+       "L434",
+       "$27.50",
+       "4+ @ $29.50"
       ],
       [
-       "UAL128"
+       "UAL128",
+       "$64.50",
+       "6+ @ $67.50"
       ],
       [
-       "UDXL201"
+       "UDXL201",
+       "$124.50",
+       "3+ @ $127.50"
       ],
       [
-       "UT906"
+       "UT906",
+       "$12.50",
+       "12+ @ $13.50"
       ],
       [
-       "X2060 (the 2026 garden catalog prints the 4+ price the same as the single price, so the single price is probably right)"
+       "X2060",
+       "$11.75",
+       "4+ @ $13.75 (the 2026 garden catalog prints 4 @ $11.75, same as single)"
       ]
      ]
     },
@@ -85,105 +97,153 @@
     {
      "id": "u4",
      "t": "Item by item",
-     "w": "Nicholas will text you the sheet with each item's old quantity prices and, for the five that are in a 2026 catalog, the catalog's prices. For each line type OLD for the old website's quantity prices, BOOK for the catalog's quantity prices (only the five lines that name a page), ONE for one price only, or type the prices yourself.",
+     "w": "For each line type OLD to bring back the old website's quantity prices, BOOK for the catalog's prices (the lines that name a page), ONE for one price only, or type the prices yourself.",
      "type": "table",
      "cols": [
       "Item",
-      "In a 2026 catalog?",
+      "Price now",
+      "Old website's quantity prices",
+      "2026 catalog",
       "Your answer: OLD, BOOK, ONE, or prices"
      ],
      "rows": [
       [
        "UT591",
-       "no"
+       "$7.25",
+       "2+ 7.75 · 4+ 6.95",
+       "not in a book"
       ],
       [
        "UW2616",
-       "yes, master catalog p. 74"
+       "$55.00",
+       "1+ 55.50 · 2+ 52.50",
+       "Master p.74: 2+ $52.50"
       ],
       [
        "UX4016",
-       "yes, garden catalog p. 89"
+       "$9.95",
+       "1+ 9.50 · 2+ 9.00",
+       "Garden p.89: 2+ $9.50"
       ],
       [
        "UX4136",
-       "no"
+       "$10.75",
+       "3+ 10.25 · 6+ 9.75",
+       "not in a book"
       ],
       [
        "UX4237",
-       "no"
+       "$12.00",
+       "2+ 11.25 · 4+ 10.75",
+       "not in a book"
       ],
       [
        "UX4428",
-       "yes, garden catalog p. 14"
+       "$10.25",
+       "2+ 9.75 · 4+ 9.25",
+       "Garden p.14: 2+ $9.75 · 4+ $9.25"
       ],
       [
        "UX4454",
-       "yes, master catalog p. 13"
+       "$2.49",
+       "6+ 2.50 · 12+ 2.35",
+       "Master p.13: 6+ $2.50 · 12+ $2.35"
       ],
       [
        "UX9179",
-       "no"
+       "$54.50",
+       "4+ 54.50",
+       "not in a book"
       ],
       [
        "UX9260",
-       "yes, garden catalog p. 30"
+       "$27.50",
+       "2+ 32.50 · 4+ 29.50",
+       "Garden p.30: 2+ $27.50 only"
       ],
       [
        "X1366",
-       "no"
+       "$13.50",
+       "3+ 12.75 · 6+ 12.25",
+       "not in a book"
       ],
       [
        "X1877",
-       "no"
+       "$16.50",
+       "2+ 15.25 · 4+ 13.75",
+       "not in a book"
       ],
       [
        "X2241",
-       "no"
+       "$17.50",
+       "2+ 16.75 · 4+ 16.25",
+       "not in a book"
       ],
       [
        "X2297",
-       "no"
+       "$9.50",
+       "4+ 9.00 · 6+ 8.50",
+       "not in a book"
       ],
       [
        "X2401",
-       "no"
+       "$21.50",
+       "2+ 18.75 · 4+ 17.75",
+       "not in a book"
       ],
       [
        "X2521",
-       "no"
+       "$14.25",
+       "2+ 13.50 · 4+ 12.75",
+       "not in a book"
       ],
       [
        "X2593",
-       "no"
+       "$11.75",
+       "3+ 10.50 · 6+ 9.75",
+       "not in a book"
       ],
       [
        "X2627",
-       "no"
+       "$11.75",
+       "4+ 10.50 · 8+ 9.75",
+       "not in a book"
       ],
       [
        "X2628",
-       "no"
+       "$8.25",
+       "3+ 7.75 · 6+ 7.25",
+       "not in a book"
       ],
       [
        "X2639",
-       "no"
+       "$11.75",
+       "3+ 10.50 · 6+ 9.75",
+       "not in a book"
       ],
       [
        "X2640",
-       "no"
+       "$10.95",
+       "3+ 9.95 · 6+ 9.25",
+       "not in a book"
       ],
       [
        "X5042",
-       "no"
+       "$6.25",
+       "4+ 5.75 · 8+ 5.25",
+       "not in a book"
       ],
       [
        "X648",
-       "no"
+       "$13.25",
+       "3+ 12.50 · 6+ 12.00",
+       "not in a book"
       ],
       [
        "X683",
-       "no"
+       "$6.75",
+       "4+ 6.25 · 12+ 5.95",
+       "not in a book"
       ]
      ],
      "showIf": {
